@@ -1,0 +1,56 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-09 10:48:01.106098 UTC
+
+interface effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm:Sort.BubbleSort 8002
+  interface hash: 0c2ecd67fcfd8dfcdc4071568cfb8235
+  ABI hash: e52d3ba7a468597dff6ff42dcc7900a4
+  export-list hash: a3dc3939efef9e6845ba95da33524bf2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3d8b3f1c0efa121201846f9ff8c21d9a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Sort.BubbleSort.sortV
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+947974fe578ab26f55ca1dd39db29815
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Sort.BubbleSort.$trModule2
+                   Sort.BubbleSort.$trModule1) -}
+560bb1c1546ba5c3c47057f7b09ad951
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sort.BubbleSort"#) -}
+49b86881f4b78b72ac7aa07811739d72
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm"#) -}
+08d280e0e1fe15bc44e735f1f87f6039
+  sortV :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(U(C(C1(U)),A),A,A,A,A,A,A,U)><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

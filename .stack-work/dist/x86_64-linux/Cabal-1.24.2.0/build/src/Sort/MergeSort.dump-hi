@@ -1,0 +1,64 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-09 09:09:52.418522 UTC
+
+interface effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm:Sort.MergeSort 8002
+  interface hash: d690d4020f319e07d925a363abd07e0d
+  ABI hash: 3dbcc908ad311977fc296c21a2423d00
+  export-list hash: 74a5171a1556d4a6063a1f7966b7789b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3d8b3f1c0efa121201846f9ff8c21d9a
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Sort.MergeSort.sortV
+module dependencies:
+package dependencies: MissingH-1.4.0.1@MissingH-1.4.0.1-4I5T4TbNA9RIo1FM0FgAP
+                      base-4.9.1.0* ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity base-4.9.1.0:Data.List.NonEmpty
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Semigroup
+                         base-4.9.1.0:Data.Type.Equality base-4.9.1.0:Data.Version
+                         base-4.9.1.0:Data.Void base-4.9.1.0:GHC.Exts
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  MissingH-1.4.0.1@MissingH-1.4.0.1-4I5T4TbNA9RIo1FM0FgAP:Data.List.Utils d8dc0eb991895dd7f68592c4ace22c20
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Tuple 7dc4bbb45d2e69c991ffac438beeca11
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+7c54ac27bc5e63d485d8cdc434364605
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Sort.MergeSort.$trModule2
+                   Sort.MergeSort.$trModule1) -}
+2dd91663fefd6b5f12e8ef3af633e1b9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sort.MergeSort"#) -}
+d96318fb2af85eb5d69d6c43bfd0f2a5
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm"#) -}
+ac0d53aa38d0d2d8a71b31f4d3c68e26
+  sortV :: GHC.Classes.Ord a => [a] -> [a]
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(A,C(C1(U)),A,A,A,A,A,A)><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

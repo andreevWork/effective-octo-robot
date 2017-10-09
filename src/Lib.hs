@@ -1,6 +1,4 @@
-module Lib
-    ( someFunc
-    ) where
+module Lib (module Sort.MergeSort) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+import Sort.MergeSort
+

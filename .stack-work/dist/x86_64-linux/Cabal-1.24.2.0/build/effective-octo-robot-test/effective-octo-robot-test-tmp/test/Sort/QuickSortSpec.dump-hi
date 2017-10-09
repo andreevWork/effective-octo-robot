@@ -1,0 +1,1327 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-09 10:17:10.471749 UTC
+
+interface main@main:Sort.QuickSortSpec 8002
+  interface hash: 65dd518bc76883bf14f8109a43d1931a
+  ABI hash: 597d2765e83e3daeb2a67ccaf6a8ad1f
+  export-list hash: a14e19d1be6c6952dfcc83b5ac739572
+  orphan hash: 2c772361d0322ed3d65bc58e7b0d34b3
+  flag hash: 4bbdbe382538196dc9ecdf916bdd7394
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Sort.QuickSortSpec.spec
+module dependencies:
+package dependencies: HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI
+                      QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
+                      ansi-terminal-0.6.3.1@ansi-terminal-0.6.3.1-3RTqikoQf47ajVD9m8zgB
+                      array-0.5.1.1@array-0.5.1.1
+                      async-2.1.1.1@async-2.1.1.1-8yywY4inVGRLJSCg60gBXj base-4.9.1.0
+                      call-stack-0.1.0@call-stack-0.1.0-FYVrCPXGP9EGAuTW32963O
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 directory-1.3.0.0@directory-1.3.0.0
+                      effective-octo-robot-0.1.0.0@effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm
+                      filepath-1.4.1.1@filepath-1.4.1.1
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hspec-2.4.4@hspec-2.4.4-Ct0Af2AzisB8bPqGMHHFvj
+                      hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E
+                      hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd
+                      integer-gmp-1.0.0.1 pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      quickcheck-io-0.2.0@quickcheck-io-0.2.0-4pLO1WRxoBW9gt8EnME0zS
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      setenv-0.1.1.3@setenv-0.1.1.3-8dEhk6JWvlmCmVyBammSpu
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      template-haskell-2.11.1.0
+                      tf-random-0.5@tf-random-0.5-CJZw1ZWS5MOJlR60HqKEZL
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+                      unix-2.7.2.1@unix-2.7.2.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         quickcheck-io-0.2.0@quickcheck-io-0.2.0-4pLO1WRxoBW9gt8EnME0zS:Test.QuickCheck.IO
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Example
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  effective-octo-robot-0.1.0.0@effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm:Sort.QuickSort 287d90cd86f7d02b3b82f36fa89ce364
+import  -/  hspec-2.4.4@hspec-2.4.4-Ct0Af2AzisB8bPqGMHHFvj:Test.Hspec 04ea8eba4a0731a497f82df2f1be76d5
+import  -/  hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Spec 9c7fa79eac9dbc252d249864b1b09503
+import  -/  hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Spec.Monad d1cd9cff7a629f7964beb4c54e36d457
+import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 7783c70233bb75afab7f7705bd782d86
+be8a3ba6553554e5049feee99e7d7ca3
+  $s$fEq[] :: GHC.Classes.Eq [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ GHC.Integer.Type.Integer
+                     GHC.Integer.Type.$fEqInteger)
+                  Sort.QuickSortSpec.$s$fEq[]_$s$fEq[]_$c/= -}
+3450334ba3f1766918e14a8aec523e58
+  $s$fEq[]_$s$fEq[]_$c/= ::
+    [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [GHC.Integer.Type.Integer])
+                   (y :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fEqInteger
+                      x
+                      y)) -}
+d5846ce10ac1648eaa6c81fa8a4c9bc2
+  $s$fShow[] :: GHC.Show.Show [GHC.Integer.Type.Integer]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  Sort.QuickSortSpec.$s$fShow[]_$s$fShow[]_$cshowsPrec
+                  Sort.QuickSortSpec.$s$fShow[]_$s$fShow[]_$cshow
+                  Sort.QuickSortSpec.$s$fShow[]_$s$fShow[]_$cshowList -}
+62d5cf3237091f1b74310e15fa2352be
+  $s$fShow[]_$s$fShow[]_$cshow ::
+    [GHC.Integer.Type.Integer] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Show.$fShowInteger_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+bfc55fc0531fa6f4360320e0fc284f07
+  $s$fShow[]_$s$fShow[]_$cshowList ::
+    [[GHC.Integer.Type.Integer]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[GHC.Integer.Type.Integer]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [GHC.Integer.Type.Integer]
+                   GHC.Show.$fShowInteger_$cshowList
+                   eta
+                   eta1) -}
+5c86b105b12571a282a4e9676b690841
+  $s$fShow[]_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int -> [GHC.Integer.Type.Integer] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [GHC.Integer.Type.Integer])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.$fShowInteger_$cshowList eta eta1) -}
+aed03a1425eedf66aa03343af6bfc4f4
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Sort.QuickSortSpec.$trModule2
+                   Sort.QuickSortSpec.$trModule1) -}
+6fdc6d8df42ecaf35af3922d75b65a15
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Sort.QuickSortSpec"#) -}
+15dcdb2a5692ec958c0508c8034b0068
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+393926a70e655241e807a073e10a006a
+  spec :: Test.Hspec.Core.Spec.Monad.Spec
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Sort.QuickSortSpec.spec1
+                  `cast`
+                (Trans
+                     (Sym (GHC.Types.N:IO[0]
+                               <((), [Test.Hspec.Core.Tree.SpecTree ()])>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                                    <[Test.Hspec.Core.Tree.SpecTree ()]>_N <GHC.Types.IO>_R <()>_N))
+                          (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N))) -}
+680be88dd997d696117691d9bf28c8d0
+  spec1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((), [Test.Hspec.Core.Tree.SpecTree ()]) #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# s, Sort.QuickSortSpec.spec2 #)) -}
+cc579f7320247ecd03712d5e805f3a66
+  spec10 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Sort.QuickSortSpec.spec24
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Sort.QuickSortSpec.spec20
+                   Sort.QuickSortSpec.spec11) -}
+0c972c51b939949e053e6b8d2f74aaea
+  spec100 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Sort.QuickSortSpec.spec101) -}
+f0b23a9a31d9adb9088a5b91a65400e4
+  spec101 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Sort.QuickSortSpec.spec102) -}
+aeddfe2f41fa7fe7c59f113a0413a4b6
+  spec102 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Sort.QuickSortSpec.spec103) -}
+26aeba591b3e8d4970db067be8ace8ba
+  spec103 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Sort.QuickSortSpec.spec46
+                   Sort.QuickSortSpec.spec104
+                   GHC.Stack.Types.EmptyCallStack) -}
+6ee622638c389746adead9805fe6f12b
+  spec104 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Sort.QuickSortSpec.spec34
+                   Sort.QuickSortSpec.spec33
+                   Sort.QuickSortSpec.spec32
+                   Sort.QuickSortSpec.spec106
+                   Sort.QuickSortSpec.spec44
+                   Sort.QuickSortSpec.spec106
+                   Sort.QuickSortSpec.spec105) -}
+657e7326820e228e30928727468da696
+  spec105 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 30#) -}
+02327f018994a57e4fb12e588d7c6f26
+  spec106 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 11#) -}
+3c7002981b14e492410af036974f36f0
+  spec107 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Sort.QuickSortSpec.spec109
+                   Sort.QuickSortSpec.spec108) -}
+8f903d66592ea9b213d0e854093112e1
+  spec108 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ame elements"#) -}
+27d0c77d80392fdfeecb7ca3c9e767a8
+  spec109 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 's'#) -}
+e1593f709fe4aa1c1e40bafa6942d774
+  spec11 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Sort.QuickSort.sortV
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Sort.QuickSortSpec.spec12) -}
+6e3d8de7d2f723493d035566a8d2d8ba
+  spec110 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Sort.QuickSortSpec.spec111
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+f21e3712079c038e87f1868b3e778846
+  spec111 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Sort.QuickSortSpec.spec112) -}
+5c04ea693fa067e42dd3db71f9884f05
+  spec112 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Sort.QuickSortSpec.spec143
+                   Sort.QuickSortSpec.spec134
+                   GHC.Types.False
+                   Sort.QuickSortSpec.spec113
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+26b7b775461583dd7b93dd363d2af5e4
+  spec113 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Sort.QuickSortSpec.spec114) -}
+1c431b951aef10162c166c7460f8faf3
+  spec114 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Sort.QuickSortSpec.spec127
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Sort.QuickSortSpec.spec123
+                   Sort.QuickSortSpec.spec115) -}
+43b1f0048f4bb92e84785170dc3a1f2c
+  spec115 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Sort.QuickSort.sortV
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Sort.QuickSortSpec.spec116) -}
+6270d4bd0bdc88f19ee68b8ceda10904
+  spec116 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec57
+                   Sort.QuickSortSpec.spec117) -}
+297ccbd519e84a425243756139a566a0
+  spec117 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec17
+                   Sort.QuickSortSpec.spec118) -}
+6ae0e7a36a6d0c291c8048554643cb2f
+  spec118 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec122
+                   Sort.QuickSortSpec.spec119) -}
+bbe9a52c581aad418211de9e67f64ba4
+  spec119 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec121
+                   Sort.QuickSortSpec.spec120) -}
+608bf6e30f35fb6b61dca3fe25b3c0a8
+  spec12 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec19
+                   Sort.QuickSortSpec.spec13) -}
+bf19e662d34711f8e3fa1b40e18b8f3e
+  spec120 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec86
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+3305f76473cf0f799ca8484b29154be5
+  spec121 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+0d2a927f4213c1e18fff3faa5233cace
+  spec122 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+7d0b0b2b83ae55d814667bce18ba9ffe
+  spec123 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec57
+                   Sort.QuickSortSpec.spec124) -}
+7b8381f459a4f2ef4e2cb5611a20e4d5
+  spec124 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec86
+                   Sort.QuickSortSpec.spec125) -}
+956f55acc24d08e6a154d2408b6c1610
+  spec125 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec121
+                   Sort.QuickSortSpec.spec126) -}
+50514e6e751dbbee9d4379e8c5071299
+  spec126 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec122
+                   Sort.QuickSortSpec.spec23) -}
+4a036bdee08859f41b48fbabad3328f6
+  spec127 ::
+    GHC.Base.String
+    -> [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Integer.Type.Integer]
+                   Sort.QuickSortSpec.spec128
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Sort.QuickSortSpec.$s$fEq[]
+                   Sort.QuickSortSpec.$s$fShow[]) -}
+540f092cbcb9c45edb8ef41e7deead2b
+  spec128 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Sort.QuickSortSpec.spec129) -}
+fe20e43028dc47a74e0d449940014dfb
+  spec129 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Sort.QuickSortSpec.spec130) -}
+602c66f9f2bf23362e330272234b2a17
+  spec13 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec18
+                   Sort.QuickSortSpec.spec14) -}
+6a9f40a71951e9fd30913b9896e2593d
+  spec130 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Sort.QuickSortSpec.spec35
+                   Sort.QuickSortSpec.spec131
+                   GHC.Stack.Types.EmptyCallStack) -}
+c7cbe30f1f5ca38e6ea3a715757400ec
+  spec131 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Sort.QuickSortSpec.spec34
+                   Sort.QuickSortSpec.spec33
+                   Sort.QuickSortSpec.spec32
+                   Sort.QuickSortSpec.spec133
+                   Sort.QuickSortSpec.spec30
+                   Sort.QuickSortSpec.spec133
+                   Sort.QuickSortSpec.spec132) -}
+13e182784b1a242c6b61d001086947e3
+  spec132 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 54#) -}
+916558e91fa8a83771b76d9819c5c101
+  spec133 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 9#) -}
+e26653343c32228304a1b05b645ea0de
+  spec134 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Sort.QuickSortSpec.spec135
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+8bc475ae688e4718a9036990d5186e55
+  spec135 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Sort.QuickSortSpec.spec136) -}
+7494d4a3e74f98b434f7848a02672b8e
+  spec136 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Sort.QuickSortSpec.spec137) -}
+170cd67c962b342f6f3dce143b1232ed
+  spec137 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Sort.QuickSortSpec.spec138) -}
+2bdd5d6fe0eb5407ab1fa06804e4eaed
+  spec138 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Sort.QuickSortSpec.spec139) -}
+ed7dffe3ffbba3da0b1100190ccd8d6e
+  spec139 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Sort.QuickSortSpec.spec46
+                   Sort.QuickSortSpec.spec140
+                   GHC.Stack.Types.EmptyCallStack) -}
+212d05ccf823d2dc7a151d1de0d500be
+  spec14 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec17
+                   Sort.QuickSortSpec.spec15) -}
+df658848363ffc7a2db36d7e85c97d5f
+  spec140 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Sort.QuickSortSpec.spec34
+                   Sort.QuickSortSpec.spec33
+                   Sort.QuickSortSpec.spec32
+                   Sort.QuickSortSpec.spec142
+                   Sort.QuickSortSpec.spec44
+                   Sort.QuickSortSpec.spec142
+                   Sort.QuickSortSpec.spec141) -}
+a0c5344ac997325953438753e9d24fbf
+  spec141 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 23#) -}
+3e4024aff8d2895cd904ebc8066bbe38
+  spec142 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 8#) -}
+24c51600060dc3a8a897ece7726304ff
+  spec143 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Sort.QuickSortSpec.spec109
+                   Sort.QuickSortSpec.spec144) -}
+1024fcf05293cc13905b4522bb0ef795
+  spec144 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "imple"#) -}
+44cc7ae85d97ca23a976534740f16758
+  spec15 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec16
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+017c457e19167ea98a18edeef218e89e
+  spec16 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (-20) -}
+0baaee5918c099823eef97556f3d296b
+  spec17 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+7ca795d6fea831f5b63b0faf4782ab0b
+  spec18 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+47d4bd02a81110e51d0b5e56b67aabcf
+  spec19 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (-1) -}
+465ad9e6464130d5a9da8768eda80b39
+  spec2 :: ((), [Test.Hspec.Core.Tree.SpecTree ()])
+  {- Unfolding: ((GHC.Tuple.(), Sort.QuickSortSpec.spec3)) -}
+7e16609c49d34aa72d07c3962b1932b4
+  spec20 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec16
+                   Sort.QuickSortSpec.spec21) -}
+6ba72a4b0bfab9e0f8cd2af74430c47c
+  spec21 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec19
+                   Sort.QuickSortSpec.spec22) -}
+a8dfb6860f0986faf758dae221a3b3ed
+  spec22 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec18
+                   Sort.QuickSortSpec.spec23) -}
+0d4cadae7db8b5d79e871492d1e4eda9
+  spec23 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec17
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+cf01f55359148c6ef66984174953a223
+  spec24 ::
+    GHC.Base.String
+    -> [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Integer.Type.Integer]
+                   Sort.QuickSortSpec.spec25
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Sort.QuickSortSpec.$s$fEq[]
+                   Sort.QuickSortSpec.$s$fShow[]) -}
+4147c7dbf4075fbb5a616a58669e7943
+  spec25 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Sort.QuickSortSpec.spec26) -}
+75ca2d19d2a4db8e0aa2447f37decfd1
+  spec26 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Sort.QuickSortSpec.spec27) -}
+eb602d4a1780ea3c27d9e25bc5b1ed24
+  spec27 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Sort.QuickSortSpec.spec35
+                   Sort.QuickSortSpec.spec28
+                   GHC.Stack.Types.EmptyCallStack) -}
+a1704dd436a284c9692fcb7b1b4466f5
+  spec28 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Sort.QuickSortSpec.spec34
+                   Sort.QuickSortSpec.spec33
+                   Sort.QuickSortSpec.spec32
+                   Sort.QuickSortSpec.spec31
+                   Sort.QuickSortSpec.spec30
+                   Sort.QuickSortSpec.spec31
+                   Sort.QuickSortSpec.spec29) -}
+120e3154178b6c1125a9cbf232dbb6f7
+  spec29 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 56#) -}
+6cb72fa26d747a6a0bb623f155b7e142
+  spec3 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Base.++
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Sort.QuickSortSpec.spec110
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
+                   Sort.QuickSortSpec.spec4) -}
+261ddaf4c80d61e8016f9a317d791512
+  spec30 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 14#) -}
+7c4f915625bc539d583c08f2306cacd7
+  spec31 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 18#) -}
+c18cfc5d97ea2c030a35a792d5a79db9
+  spec32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "test/Sort/QuickSortSpec.hs"#) -}
+af4b89635158a1e96547acbde24297a7
+  spec33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Sort.QuickSortSpec"#) -}
+1e8e98bb23fa3f1f595e656ab0155174
+  spec34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "main"#) -}
+98cf3a30d13d53b7856ecdadb3ea35e5
+  spec35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "shouldBe"#) -}
+e2cb651ff0e1c2907b95b88c176409d1
+  spec36 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Sort.QuickSortSpec.spec37
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+d628a6e4bfca560dbc34a3d254ca06d1
+  spec37 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Sort.QuickSortSpec.spec38) -}
+c4c06265a8dc7ecef342641dd5060949
+  spec38 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Sort.QuickSortSpec.spec39) -}
+a9ea3d88f13d8c5b2cbd85dc0d632fbb
+  spec39 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Sort.QuickSortSpec.spec40) -}
+3b197f4c0a0b9e920cfc665f870724e0
+  spec4 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Base.++
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Sort.QuickSortSpec.spec76
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
+                   Sort.QuickSortSpec.spec5) -}
+c316adba8b3e0d29502c1f755048de17
+  spec40 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Sort.QuickSortSpec.spec41) -}
+02745f5af78e0cb2f5cd1213b5a5974e
+  spec41 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Sort.QuickSortSpec.spec46
+                   Sort.QuickSortSpec.spec42
+                   GHC.Stack.Types.EmptyCallStack) -}
+ff4f381fd89e5be0984085e7d3266f69
+  spec42 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Sort.QuickSortSpec.spec34
+                   Sort.QuickSortSpec.spec33
+                   Sort.QuickSortSpec.spec32
+                   Sort.QuickSortSpec.spec45
+                   Sort.QuickSortSpec.spec44
+                   Sort.QuickSortSpec.spec45
+                   Sort.QuickSortSpec.spec43) -}
+2a0c51a0c57c62f0ecf3e5c42254b10a
+  spec43 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 25#) -}
+bfbbc453f779ff2de725228e8461a77c
+  spec44 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 12#) -}
+13c555f4aeef3e73426aca38d17b9679
+  spec45 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 17#) -}
+3620b8ea2ea9dc084f668245c26839be
+  spec46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "it"#) -}
+74925ed95d6507b63a6fb98073367feb
+  spec47 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Sort.QuickSortSpec.spec49
+                   Sort.QuickSortSpec.spec48) -}
+be472ffcf79d986b84e412ac9611d65b
+  spec48 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "egative"#) -}
+d1b24a5e2dbdf4cd2b21299d6245e93f
+  spec49 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'n'#) -}
+37fee2702e0062220771f519ce883568
+  spec5 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Base.++
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Sort.QuickSortSpec.spec50
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
+                   Sort.QuickSortSpec.spec6
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R) -}
+ba44ef492b9d2299c91e1162689e75e1
+  spec50 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Sort.QuickSortSpec.spec51
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+a09f36cd5f0e540eca7b471907941a20
+  spec51 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Sort.QuickSortSpec.spec52) -}
+260ef194d004c81da7d2dd6850c9fcb4
+  spec52 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Sort.QuickSortSpec.spec73
+                   Sort.QuickSortSpec.spec65
+                   GHC.Types.False
+                   Sort.QuickSortSpec.spec53
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+6e85980d1ece7d93740e8dd3d509b8cc
+  spec53 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Sort.QuickSortSpec.spec54) -}
+7d7d5a5646979da2b3d722e6b15c1ccd
+  spec54 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Sort.QuickSortSpec.spec58
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Sort.QuickSortSpec.spec56
+                   Sort.QuickSortSpec.spec55) -}
+df50e3ee0a245367da079d12ef1c9adc
+  spec55 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Sort.QuickSort.sortV
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Sort.QuickSortSpec.spec56) -}
+2f3e4c3a3d982809c6aa08203de42fd4
+  spec56 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec57
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+17313b6dd82cb58422dd3666b2d1a446
+  spec57 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+196cce82825f678cd0ea0a2a0a745f9f
+  spec58 ::
+    GHC.Base.String
+    -> [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Integer.Type.Integer]
+                   Sort.QuickSortSpec.spec59
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Sort.QuickSortSpec.$s$fEq[]
+                   Sort.QuickSortSpec.$s$fShow[]) -}
+7ca39aaa177423ef09a042d4f434bff6
+  spec59 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Sort.QuickSortSpec.spec60) -}
+b703a174cb709c55d07a730dde890b4a
+  spec6 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Sort.QuickSortSpec.spec7
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+0c1008e7a62ec32a5dea2aa0890a64a1
+  spec60 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Sort.QuickSortSpec.spec61) -}
+1a384a6fed08eecb7778abbf7feaa888
+  spec61 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Sort.QuickSortSpec.spec35
+                   Sort.QuickSortSpec.spec62
+                   GHC.Stack.Types.EmptyCallStack) -}
+2302ce33b03bf9b212cafbf9c6a0a33a
+  spec62 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Sort.QuickSortSpec.spec34
+                   Sort.QuickSortSpec.spec33
+                   Sort.QuickSortSpec.spec32
+                   Sort.QuickSortSpec.spec64
+                   Sort.QuickSortSpec.spec30
+                   Sort.QuickSortSpec.spec64
+                   Sort.QuickSortSpec.spec63) -}
+7b7e58fe3d8550913d24bfccf737ff8f
+  spec63 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 38#) -}
+5c6cf932c587e52d5df38fae2ee21e6c
+  spec64 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 15#) -}
+0248a286cbf3c3e89b188c6ff7726eee
+  spec65 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Sort.QuickSortSpec.spec66
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+07081b830780141fdae0cb83689b032f
+  spec66 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Sort.QuickSortSpec.spec67) -}
+dbafe581cf374eaf429abb1bc8a10bd0
+  spec67 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Sort.QuickSortSpec.spec68) -}
+97d46f06349bbe8f2452156626e95ca7
+  spec68 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Sort.QuickSortSpec.spec69) -}
+ba63c423376b92b14e574dc886b5d130
+  spec69 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Sort.QuickSortSpec.spec70) -}
+84e80ec9f58097e4f041df1ef2c50109
+  spec7 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Sort.QuickSortSpec.spec8) -}
+85855e7ed9875d8a9317797c810f1b07
+  spec70 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Sort.QuickSortSpec.spec46
+                   Sort.QuickSortSpec.spec71
+                   GHC.Stack.Types.EmptyCallStack) -}
+705f8091ff180702489314e3303b37a7
+  spec71 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Sort.QuickSortSpec.spec34
+                   Sort.QuickSortSpec.spec33
+                   Sort.QuickSortSpec.spec32
+                   Sort.QuickSortSpec.spec30
+                   Sort.QuickSortSpec.spec44
+                   Sort.QuickSortSpec.spec30
+                   Sort.QuickSortSpec.spec72) -}
+dbcd59c75da933500035ffe77bd8cc18
+  spec72 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 28#) -}
+4cc8643414ade062299820d8733ef8f7
+  spec73 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Sort.QuickSortSpec.spec75
+                   Sort.QuickSortSpec.spec74) -}
+342897e2aa76d9b2ef7b3bbb303007ce
+  spec74 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ne element"#) -}
+c8219ee57130c1f6e0691d2d9721efe4
+  spec75 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'o'#) -}
+0f335bc097d3b979f4dccb1b67c15877
+  spec76 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Sort.QuickSortSpec.spec77
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+39de7356886cbf2b1592b971be29bd28
+  spec77 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Sort.QuickSortSpec.spec78) -}
+1c0f576813a719f46d241c1170f429ba
+  spec78 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Sort.QuickSortSpec.spec107
+                   Sort.QuickSortSpec.spec98
+                   GHC.Types.False
+                   Sort.QuickSortSpec.spec79
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+1bfeb934c42323c0074a620a842a09d2
+  spec79 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Sort.QuickSortSpec.spec80) -}
+5c057d56adc0628c1c9e193c023c2957
+  spec8 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Sort.QuickSortSpec.spec47
+                   Sort.QuickSortSpec.spec36
+                   GHC.Types.False
+                   Sort.QuickSortSpec.spec9
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+d8d45222a41100ef074b15b587a59f90
+  spec80 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Sort.QuickSortSpec.spec92
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Sort.QuickSortSpec.spec87
+                   Sort.QuickSortSpec.spec81) -}
+7ba305ad167ed17d42852317bd68146e
+  spec81 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (Sort.QuickSort.sortV
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fOrdInteger
+                   Sort.QuickSortSpec.spec82) -}
+4515c37f87605ff0830c727d02572411
+  spec82 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec57
+                   Sort.QuickSortSpec.spec83) -}
+d5362a45e7e2b263880fe6ced9ecd59e
+  spec83 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec86
+                   Sort.QuickSortSpec.spec84) -}
+71fc76bf237f9cbc8665fab5b0235720
+  spec84 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec86
+                   Sort.QuickSortSpec.spec85) -}
+0f2b2ee42e4ea520fc674babf78cb2f8
+  spec85 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec57
+                   Sort.QuickSortSpec.spec22) -}
+dca16703da5ddffef41d31e5281477d9
+  spec86 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+4968da1dd19fbd750372c9439d3c552f
+  spec87 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec18
+                   Sort.QuickSortSpec.spec88) -}
+f3b203f34b11daab3e376e6323f09967
+  spec88 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec57
+                   Sort.QuickSortSpec.spec89) -}
+6509f8af5cd36e3b9de55fadf34c0328
+  spec89 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec57
+                   Sort.QuickSortSpec.spec90) -}
+3b27a7f929756dae9415dd668782c83f
+  spec9 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Sort.QuickSortSpec.spec10) -}
+d32574a8b50e43dbc67b391daf5c21dc
+  spec90 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec86
+                   Sort.QuickSortSpec.spec91) -}
+5ef288e852511d048afcb277ee678414
+  spec91 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Sort.QuickSortSpec.spec86
+                   Sort.QuickSortSpec.spec23) -}
+0f062ebfce4972e667845091b99c9e9e
+  spec92 ::
+    GHC.Base.String
+    -> [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Integer.Type.Integer]
+                   Sort.QuickSortSpec.spec93
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Sort.QuickSortSpec.$s$fEq[]
+                   Sort.QuickSortSpec.$s$fShow[]) -}
+125368b6301121dbe3a53523640cdf57
+  spec93 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Sort.QuickSortSpec.spec94) -}
+0099a9c2d6fd0549a1402ddd02a8b7ed
+  spec94 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Sort.QuickSortSpec.spec95) -}
+8e99a1d1b271ccbee3e3c0724cf98bb4
+  spec95 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Sort.QuickSortSpec.spec35
+                   Sort.QuickSortSpec.spec96
+                   GHC.Stack.Types.EmptyCallStack) -}
+f528d0b0a07fb0e7df7077fc9ce333ec
+  spec96 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Sort.QuickSortSpec.spec34
+                   Sort.QuickSortSpec.spec33
+                   Sort.QuickSortSpec.spec32
+                   Sort.QuickSortSpec.spec44
+                   Sort.QuickSortSpec.spec30
+                   Sort.QuickSortSpec.spec44
+                   Sort.QuickSortSpec.spec97) -}
+d10e74515bc39d96d2175f1e3977a0de
+  spec97 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 58#) -}
+00f98bcdf65e2da7b59d6c6055da1d67
+  spec98 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Sort.QuickSortSpec.spec99
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+8833c73c9210293384d9ab2ec8b75e97
+  spec99 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Sort.QuickSortSpec.spec100) -}
+"SPEC/Sort.QuickSortSpec $fEq[] @ Integer" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                      GHC.Integer.Type.Integer)
+  GHC.Classes.$fEq[] @ GHC.Integer.Type.Integer $dEq
+  = Sort.QuickSortSpec.$s$fEq[]
+"SPEC/Sort.QuickSortSpec $fEq[]_$c/= @ Integer" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                           GHC.Integer.Type.Integer)
+  GHC.Classes.$fEq[]_$c/= @ GHC.Integer.Type.Integer $dEq
+  = Sort.QuickSortSpec.$s$fEq[]_$s$fEq[]_$c/=
+"SPEC/Sort.QuickSortSpec $fShow[] @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                          GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[] @ GHC.Integer.Type.Integer $dShow
+  = Sort.QuickSortSpec.$s$fShow[]
+"SPEC/Sort.QuickSortSpec $fShow[]_$cshow @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                 GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshow @ GHC.Integer.Type.Integer $dShow
+  = Sort.QuickSortSpec.$s$fShow[]_$s$fShow[]_$cshow
+"SPEC/Sort.QuickSortSpec $fShow[]_$cshowList @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                     GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshowList @ GHC.Integer.Type.Integer $dShow
+  = Sort.QuickSortSpec.$s$fShow[]_$s$fShow[]_$cshowList
+"SPEC/Sort.QuickSortSpec $fShow[]_$cshowsPrec @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                      GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshowsPrec @ GHC.Integer.Type.Integer $dShow
+  = Sort.QuickSortSpec.$s$fShow[]_$s$fShow[]_$cshowsPrec
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
