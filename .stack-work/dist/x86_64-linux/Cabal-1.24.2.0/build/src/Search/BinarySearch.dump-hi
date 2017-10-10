@@ -1,0 +1,109 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-10 13:31:53.253369 UTC
+
+interface effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm:Search.BinarySearch 8002
+  interface hash: 2cb9ee01421ea2156ce3a5eb64229a57
+  ABI hash: fbe28740f6691df15bcf38c1a5c8864d
+  export-list hash: c9bf8d20e96fea22f1fa057d3af35222
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8bad3c5c921abe35cc75438388d3ac66
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Search.BinarySearch.searchV
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+262ca62a7511552536f4bec4ebbbdea2
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Search.BinarySearch.$trModule2
+                   Search.BinarySearch.$trModule1) -}
+06fa5cefba41a1b719cc8b60da13821c
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Search.BinarySearch"#) -}
+2b6772d3fe6fc95062405616c87fe076
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm"#) -}
+210393da7174f2ad61246e653af1632e
+  searchV ::
+    GHC.Classes.Ord a => [a] -> a -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 3,
+     Strictness: <L,U(1*U,A,C(C1(U)),A,C(C1(U)),A,A,A)><S,1*U><L,U>,
+     Unfolding: (\ @ a
+                   ($dOrd :: GHC.Classes.Ord a)
+                   (eta :: [a])
+                   (eta1 :: a) ->
+                 case eta of wild {
+                   [] -> GHC.Base.Nothing @ GHC.Types.Int
+                   : ipv ipv1
+                   -> case GHC.List.$wlenAcc @ a wild 0# of ww2 { DEFAULT ->
+                      let {
+                        $dEq :: GHC.Classes.Eq a = GHC.Classes.$p1Ord @ a $dOrd
+                      } in
+                      letrec {
+                        $wsearchV' :: GHC.Prim.Int#
+                                      -> GHC.Prim.Int# -> GHC.Base.Maybe GHC.Types.Int
+                          {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0] -}
+                        = \ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                          case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># ww ww1) of wild1 {
+                            GHC.Types.False
+                            -> let {
+                                 middleIndex :: GHC.Types.Int
+                                 = case GHC.Classes.divInt#
+                                          (GHC.Prim.-# ww1 ww)
+                                          2# of ww4 { DEFAULT ->
+                                   GHC.Types.I# (GHC.Prim.+# ww ww4) }
+                               } in
+                               let {
+                                 middleEl :: a
+                                 = case middleIndex of ww3 { GHC.Types.I# ww4 ->
+                                   GHC.List.$w!! @ a wild ww4 }
+                               } in
+                               case GHC.Classes.== @ a $dEq eta1 middleEl of wild2 {
+                                 GHC.Types.False
+                                 -> case GHC.Classes.< @ a $dOrd eta1 middleEl of wild3 {
+                                      GHC.Types.False
+                                      -> case GHC.Classes.> @ a $dOrd eta1 middleEl of wild4 {
+                                           GHC.Types.False -> Search.BinarySearch.searchV1
+                                           GHC.Types.True
+                                           -> case middleIndex of wild5 { GHC.Types.I# x ->
+                                              $wsearchV' (GHC.Prim.+# x 1#) ww1 } }
+                                      GHC.Types.True
+                                      -> case middleIndex of wild4 { GHC.Types.I# x ->
+                                         $wsearchV' ww (GHC.Prim.-# x 1#) } }
+                                 GHC.Types.True -> GHC.Base.Just @ GHC.Types.Int middleIndex }
+                            GHC.Types.True -> GHC.Base.Nothing @ GHC.Types.Int }
+                      } in
+                      $wsearchV' 0# (GHC.Prim.-# ww2 1#) } }) -}
+91feb294d2a8017aa4a07fada9085101
+  searchV1 :: GHC.Base.Maybe GHC.Types.Int
+  {- Strictness: x -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
