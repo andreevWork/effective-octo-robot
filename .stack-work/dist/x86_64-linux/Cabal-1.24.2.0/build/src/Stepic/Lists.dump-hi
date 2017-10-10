@@ -1,0 +1,54 @@
+
+==================== FINAL INTERFACE ====================
+2017-10-10 14:42:10.222646 UTC
+
+interface effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm:Stepic.Lists 8002
+  interface hash: 3c95e995b9c3acd06c66a7ef6962027d
+  ABI hash: eb15197e60343a77b4850e3dc88b20b9
+  export-list hash: 71d84f81b248ad57cf4107674a0d2807
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 94d7fd83d9b38813b75cb1fbe099a333
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Stepic.Lists.isPalindrome
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+b2b6ca7a2804e71603418a65348b43db
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Stepic.Lists.$trModule2
+                   Stepic.Lists.$trModule1) -}
+ac00a480eba88953928853b960a14b76
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Stepic.Lists"#) -}
+421d8a75a6285edc3c08db23e4b26d1c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm"#) -}
+704739cfb64294f158db7c7f0f04ec22
+  isPalindrome :: GHC.Classes.Eq a => [a] -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <L,U(C(C1(U)),A)><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
