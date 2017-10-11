@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-10 14:42:11.475605 UTC
+2017-10-11 12:40:33.827436 UTC
 
 interface main@main:Main 8002
-  interface hash: c8d4e0f5cb5de1a3551635036d79a56c
-  ABI hash: 168dc963a697ba0dd389eccc1eee3c5a
+  interface hash: 6f44e25abfcf67f28ea0ffe915539812
+  ABI hash: eefd9f13197981513cb98b0deac2b401
   export-list hash: 671f86fc34df332ac6d75ade2536b591
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 4e497b61131934a99e29cf8f0c9d8e75
@@ -87,9 +87,9 @@ import  -/  Sort.MergeSortSpec 7182b10fbef76dc7b90a385edaf40cbc
 import  -/  Sort.QuickSortSpec 597d2765e83e3daeb2a67ccaf6a8ad1f
   exports: a14e19d1be6c6952dfcc83b5ac739572
   spec 393926a70e655241e807a073e10a006a
-import  -/  Stepic.ListsSpec 6e68d13fc6a21689cb46917bf916ed33
-  exports: 4fed22ff4c16f6862b6a1849b155248b
-  spec 7ff967b019a547ff3a277a16a5b750fb
+import  -/  Stepic.ListsSpec d1fd4be6e85c48a13f7ea9861e0e2fb5
+  exports: 69ab7df4d82b46f29f628e282c3fe121
+  spec dae0aafe219ae8eff1436cc64b3d0bff
 d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -102,12 +102,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-26ff2d99585d9e87603303c0e81fd9ed
+2a9afb2da1913daff4de3b117ffdc759
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-b3d439498f7c6c5a5ad282df5cf7355a
+74497b3d09ee924ea3206a589f665d4d
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -212,7 +212,7 @@ fc7928029185a773b74399c9d0c84add
         (Test.Hspec.Core.Example.ActionWith ())
         (Test.Hspec.Core.Tree.Item ())])
   {- Unfolding: ((GHC.Tuple.(), Main.main20)) -}
-837e3093ac5009222a19a56779e0d3ee
+b86f684e6b4a9b32d9603e7dd3accb55
   main2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -403,7 +403,7 @@ a7577125f2aab9fb7660d8ece4160500
                    @ GHC.Types.Char
                    Main.main9
                    Main.main30) -}
-fde4cfeac79032990e5c7718680bdc07
+9bac7891391e1d543b33760ef36eadff
   main3 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
@@ -478,7 +478,7 @@ ed5d768c11f925999e85b7bb3912d84f
   main38 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "test/Search/BinarySearchSpec.hs"#) -}
-1a9f0f983e49073aa105d1f663f6ae77
+8cdadc8ba36e0bffeec552776f22cb70
   main39 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -486,14 +486,14 @@ ed5d768c11f925999e85b7bb3912d84f
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
                    Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
-1c01c1487694a3f6ed6987f7bc67ef9f
+8022f42ce8952393e15f08a7d293287e
   main4 ::
     ((),
      [Test.Hspec.Core.Tree.Tree
         (Test.Hspec.Core.Example.ActionWith ())
         (Test.Hspec.Core.Tree.Item ())])
   {- Unfolding: ((GHC.Tuple.(), Main.main5)) -}
-82c0e3cf78cd6002d4067fd5f60026df
+7284e3b28cc9b0899c9e595d2c71efa5
   main5 ::
     [Test.Hspec.Core.Tree.Tree
        (Test.Hspec.Core.Example.ActionWith ())
@@ -507,7 +507,7 @@ ed5d768c11f925999e85b7bb3912d84f
                       @ (Test.Hspec.Core.Tree.Tree
                            (Test.Hspec.Core.Example.ActionWith ())
                            (Test.Hspec.Core.Tree.Item ())))) -}
-db4e4e540b0c90beded7fd626170b1be
+4f7c0a8f64cce5fd6ab65abd05c8eec7
   main6 ::
     Test.Hspec.Core.Tree.Tree
       (Test.Hspec.Core.Example.ActionWith ())
@@ -529,7 +529,7 @@ fe455bdc2f5e21078e2f33f4ecc4da88
 779c4eb133328d946192946c13150608
   main9 :: GHC.Types.Char
   {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'S'#) -}
-b0be743b7bea13d815ab3e91552b6335
+db8ed2ded03deee80d4c18b0a9be161e
   spec :: Test.Hspec.Core.Spec.Monad.Spec
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)

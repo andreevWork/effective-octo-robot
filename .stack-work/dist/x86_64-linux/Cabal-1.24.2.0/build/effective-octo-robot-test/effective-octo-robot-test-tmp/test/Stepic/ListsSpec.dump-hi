@@ -1,12 +1,12 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-10 14:42:11.301736 UTC
+2017-10-11 12:40:33.617424 UTC
 
 interface main@main:Stepic.ListsSpec 8002
-  interface hash: a73fdc82c4f54c8e15d2731c245a3a55
-  ABI hash: 6e68d13fc6a21689cb46917bf916ed33
-  export-list hash: 4fed22ff4c16f6862b6a1849b155248b
-  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  interface hash: b66c3966b36c4ef541ecf7d5ef4e4924
+  ABI hash: d1fd4be6e85c48a13f7ea9861e0e2fb5
+  export-list hash: 69ab7df4d82b46f29f628e282c3fe121
+  orphan hash: 4384438cb875a1e3f48d1bd85d8912d6
   flag hash: 69bc38930c38fa7c60466c966f4bccaa
   sig of: Nothing
   used TH splices: False
@@ -65,11 +65,140 @@ family instance modules: base-4.9.1.0:Control.Applicative
                          primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
                          template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
-import  -/  effective-octo-robot-0.1.0.0@effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm:Stepic.Lists eb15197e60343a77b4850e3dc88b20b9
+import  -/  effective-octo-robot-0.1.0.0@effective-octo-robot-0.1.0.0-KcrcswkT73U2JfS8YKFcKm:Stepic.Lists 253821d7fe3d923f509939748f87bc3b
 import  -/  hspec-2.4.4@hspec-2.4.4-Ct0Af2AzisB8bPqGMHHFvj:Test.Hspec 04ea8eba4a0731a497f82df2f1be76d5
 import  -/  hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Spec 9c7fa79eac9dbc252d249864b1b09503
 import  -/  hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Spec.Monad d1cd9cff7a629f7964beb4c54e36d457
 import  -/  hspec-expectations-0.8.2@hspec-expectations-0.8.2-DujBeQFEMmfJJRLad7XQgd:Test.Hspec.Expectations 7783c70233bb75afab7f7705bd782d86
+9cb7c297972b0c9b343a241ec7bb60c4
+  $s$fEq[] :: GHC.Classes.Eq [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ GHC.Integer.Type.Integer
+                     GHC.Integer.Type.$fEqInteger)
+                  Stepic.ListsSpec.$s$fEq[]_$s$fEq[]_$c/= -}
+41a6d5138064002b970cda7d8e056ede
+  $s$fEq[]1 :: GHC.Classes.Eq [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [[GHC.Integer.Type.Integer]]
+                  (GHC.Classes.$fEq[]_$c==
+                     @ [GHC.Integer.Type.Integer]
+                     Stepic.ListsSpec.$s$fEq[]_$dEq)
+                  Stepic.ListsSpec.$s$fEq[]_$s$fEq[]_$c/=1 -}
+00d3814a1112b448df4ca109e6a89964
+  $s$fEq[]_$dEq :: GHC.Classes.Eq [GHC.Integer.Type.Integer]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Stepic.ListsSpec.$s$fEq[] -}
+401dd4fc70663bd93ca33f466095c356
+  $s$fEq[]_$s$fEq[]_$c/= ::
+    [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [GHC.Integer.Type.Integer])
+                   (y :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ GHC.Integer.Type.Integer
+                      GHC.Integer.Type.$fEqInteger
+                      x
+                      y)) -}
+e5fee6e8b84cb37fa33c287a2ea85aca
+  $s$fEq[]_$s$fEq[]_$c/=1 ::
+    [[GHC.Integer.Type.Integer]]
+    -> [[GHC.Integer.Type.Integer]] -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: [[GHC.Integer.Type.Integer]])
+                   (y :: [[GHC.Integer.Type.Integer]]) ->
+                 GHC.Classes.not
+                   (GHC.Classes.$fEq[]_$c==
+                      @ [GHC.Integer.Type.Integer]
+                      Stepic.ListsSpec.$s$fEq[]_$dEq
+                      x
+                      y)) -}
+444a33b98f01258e2eb0eab21a054feb
+  $s$fShow[] :: GHC.Show.Show [[GHC.Integer.Type.Integer]]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [[GHC.Integer.Type.Integer]]
+                  Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowsPrec
+                  Stepic.ListsSpec.$s$fShow[]1
+                  Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowList -}
+8dd86a1ae7706bcb0e492482bb66d24a
+  $s$fShow[]1 :: [[GHC.Integer.Type.Integer]] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [[GHC.Integer.Type.Integer]]) ->
+                 GHC.Show.showList__
+                   @ [GHC.Integer.Type.Integer]
+                   GHC.Show.$fShowInteger_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+9d8098a7dfd642e3aa185ba2d5a03a82
+  $s$fShow[]2 :: GHC.Show.Show [GHC.Integer.Type.Integer]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Integer.Type.Integer]
+                  Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowsPrec1
+                  Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshow
+                  Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowList1 -}
+c4acaa03e4d43dd9536194244caf58f4
+  $s$fShow[]_$s$fShow[]_$cshow ::
+    [GHC.Integer.Type.Integer] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: [GHC.Integer.Type.Integer]) ->
+                 GHC.Show.$fShowInteger_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+dd2687ec5a528dde5fae31d514cd6ae6
+  $s$fShow[]_$s$fShow[]_$cshowList ::
+    [[[GHC.Integer.Type.Integer]]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[[GHC.Integer.Type.Integer]]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [[GHC.Integer.Type.Integer]]
+                   Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowList1
+                   eta
+                   eta1) -}
+c22891cb08d21b281872deb2846f5091
+  $s$fShow[]_$s$fShow[]_$cshowList1 ::
+    [[GHC.Integer.Type.Integer]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta :: [[GHC.Integer.Type.Integer]])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ [GHC.Integer.Type.Integer]
+                   GHC.Show.$fShowInteger_$cshowList
+                   eta
+                   eta1) -}
+6b87a4505ebe9d3637725caa71f12e72
+  $s$fShow[]_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int -> [[GHC.Integer.Type.Integer]] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [[GHC.Integer.Type.Integer]])
+                   (eta1 :: GHC.Base.String) ->
+                 Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowList1 eta eta1) -}
+dcb139f77fb94f555d15d349e4e1842f
+  $s$fShow[]_$s$fShow[]_$cshowsPrec1 ::
+    GHC.Types.Int -> [GHC.Integer.Type.Integer] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: GHC.Types.Int)
+                   (eta :: [GHC.Integer.Type.Integer])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.$fShowInteger_$cshowList eta eta1) -}
 a7652e243a44a757e089bf31cdfedf65
   $trModule :: GHC.Types.Module
   {- HasNoCafRefs, Strictness: m,
@@ -84,7 +213,7 @@ b6656bef48647aaa6e4529c159de544e
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-7ff967b019a547ff3a277a16a5b750fb
+dae0aafe219ae8eff1436cc64b3d0bff
   spec :: Test.Hspec.Core.Spec.Monad.Spec
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
@@ -97,98 +226,93 @@ b6656bef48647aaa6e4529c159de544e
                           (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
                                     <[Test.Hspec.Core.Tree.SpecTree ()]>_N <GHC.Types.IO>_R <()>_N))
                           (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N))) -}
-9703c4672678d2c03e9c4feedec8d402
+eb40a54c133f8bba415967a2a07d428e
   spec1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          ((), [Test.Hspec.Core.Tree.SpecTree ()]) #)
+          ((),
+           [Test.Hspec.Core.Tree.Tree
+              (Test.Hspec.Core.Example.ActionWith ())
+              (Test.Hspec.Core.Tree.Item ())]) #)
   {- Arity: 1, Strictness: <S,U>,
-     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 (# s, Stepic.ListsSpec.spec2 #)) -}
-845e52113721209e03357f6c756af6ef
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta, Stepic.ListsSpec.spec2 #)) -}
+20842d8e55d93c90be1117e1787f4de4
   spec10 ::
-    Test.Hspec.Core.Example.Params
-    -> (Test.Hspec.Core.Example.ActionWith
-          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-        -> GHC.Types.IO ())
-    -> Test.Hspec.Core.Example.ProgressCallback
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Either.Either
-            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
-  {- Arity: 4,
-     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
-                   @ Test.Hspec.Expectations.Expectation
-                   Test.Hspec.Core.Example.$fExampleIO1
-                     `cast`
-                   (Trans
-                        (<Test.Hspec.Expectations.Expectation>_R
-                         ->_R <Test.Hspec.Core.Example.Params>_R
-                         ->_R ((Trans
-                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
-                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
-                                ->_R <GHC.Types.IO ()>_R)
-                               ->_R <GHC.Types.IO ()>_R)
-                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
-                        (Sym (Test.Hspec.Core.Example.N:Example[0]
-                                  <Test.Hspec.Expectations.Expectation>_N)))
-                   Stepic.ListsSpec.spec11) -}
-b89a633e86296b8fd71682c9dec37ada
-  spec100 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
-  {- Unfolding: (Data.CallStack.$wunsafeDrop
-                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
-                   1#
-                   Stepic.ListsSpec.spec101) -}
-95b698ee94f2b1b0f4162b2e7471936c
-  spec101 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
-  {- Unfolding: (GHC.Stack.Types.getCallStack
-                   Stepic.ListsSpec.spec102) -}
-e74b2e3e15dc1144671da53291d0dc4f
-  spec102 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Core.Tree.specItem9
-                   Test.Hspec.Core.Tree.specItem2
-                   Stepic.ListsSpec.spec103) -}
-0f9d896ff7199bceb833ac1008be7da3
-  spec103 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Core.Spec.it9
-                   Test.Hspec.Core.Spec.it2
-                   Stepic.ListsSpec.spec104) -}
-c610ed90a4af198cc1aa70077e608608
-  spec104 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec39
-                   Stepic.ListsSpec.spec105
-                   GHC.Stack.Types.EmptyCallStack) -}
-879b77ecc5652ca6729554952d599c99
-  spec105 :: GHC.Stack.Types.SrcLoc
-  {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec106
-                   Stepic.ListsSpec.spec37
-                   Stepic.ListsSpec.spec106
-                   Stepic.ListsSpec.spec36) -}
-58433f0c558a2d90824d8e48a8dbe486
-  spec106 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 11#) -}
-5b4b8d6a68de88d63e4ad64836559bb0
-  spec107 ::
     [Test.Hspec.Core.Tree.SpecTree
        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
   {- Unfolding: (GHC.Types.:
                    @ (Test.Hspec.Core.Tree.SpecTree
                         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec108
+                   Stepic.ListsSpec.spec11
                    (GHC.Types.[]
                       @ (Test.Hspec.Core.Tree.SpecTree
                            (Test.Hspec.Core.Example.Arg
                               Test.Hspec.Expectations.Expectation)))) -}
-5f505f588dc0f626129b95eaad771621
-  spec108 ::
+319050b03499b0d2e9b5812f1094b036
+  spec100 :: [[GHC.Integer.Type.Integer]]
+  {- Unfolding: (Data.OldList.transpose_$stranspose
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec35
+                   Stepic.ListsSpec.spec101) -}
+65e3a6217ba3e3ad0b22442244837e52
+  spec101 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec107
+                   Stepic.ListsSpec.spec102) -}
+db1c27465c4246356a55b75bc4e9e03c
+  spec102 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec103
+                   (GHC.Types.[] @ [GHC.Integer.Type.Integer])) -}
+8e4d9d1910b2267a325d66c0a674447e
+  spec103 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec106
+                   Stepic.ListsSpec.spec104) -}
+c118e54121319bebb1495a0904c1469d
+  spec104 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec105
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+d7f1b11a45ac87f0a1e22a5eb8f8d6fc
+  spec105 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (6) -}
+3a01a1333d9dd301df4f413eb0fcb680
+  spec106 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+f7bbd1cd1443301d4325794b61aded57
+  spec107 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec24
+                   Stepic.ListsSpec.spec108) -}
+d23fcab206ab1302232c9d3144d9a3af
+  spec108 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec23
+                   Stepic.ListsSpec.spec109) -}
+bfe875289c386285a95b054c25001d24
+  spec109 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec23
+                   Stepic.ListsSpec.spec104) -}
+d9cae9899100132d49ea8a20a517ac64
+  spec11 ::
     Test.Hspec.Core.Tree.Tree
       (Test.Hspec.Core.Example.ActionWith
          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
@@ -199,17 +323,87 @@ c610ed90a4af198cc1aa70077e608608
                         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
                    @ (Test.Hspec.Core.Tree.Item
                         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec12) -}
+56ee9b0fe96ee9003333c4696a4bf882
+  spec110 :: [GHC.Integer.Type.Integer] -> GHC.Integer.Type.Integer
+  {- Arity: 1,
+     Unfolding: (GHC.List.foldl
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.plusInteger
+                   Stepic.Lists.sum1) -}
+2097a241bba3b4b9da589c1047d474f4
+  spec111 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec23
+                   Stepic.ListsSpec.spec112) -}
+6d58568c69433477346192ab28562a8a
+  spec112 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec113
                    Stepic.ListsSpec.spec109) -}
-fbf234dc97a49ff5c269992f1927d0b7
-  spec109 ::
+f7873d3230c7020c3248ce6946d880aa
+  spec113 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (11) -}
+ad00974f48cdfb67bb649585e7a9d5f7
+  spec114 ::
+    GHC.Base.String
+    -> [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec115
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Stepic.ListsSpec.$s$fEq[]
+                   Stepic.ListsSpec.$s$fShow[]2) -}
+13d93f749850af3aadcd5bb2ff1799d5
+  spec115 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Stepic.ListsSpec.spec116) -}
+86b3eef7b5e270b7b28767909291ed17
+  spec116 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Stepic.ListsSpec.spec117) -}
+dc27e423a05c584ce503f5ed92839ed7
+  spec117 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec118
+                   GHC.Stack.Types.EmptyCallStack) -}
+abd2538819016bad52fa26ba1a022e72
+  spec118 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec120
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec120
+                   Stepic.ListsSpec.spec119) -}
+f36adae1c3b92d580790ae51d9e3dc35
+  spec119 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 61#) -}
+7642c3f1086d967fea3fbb1ad028e35f
+  spec12 ::
     Test.Hspec.Core.Tree.Item
       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
   {- Unfolding: (Test.Hspec.Core.Tree.Item
                    @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                   Stepic.ListsSpec.spec40
-                   Stepic.ListsSpec.spec124
+                   Stepic.ListsSpec.spec59
+                   Stepic.ListsSpec.spec48
                    GHC.Types.False
-                   Stepic.ListsSpec.spec110
+                   Stepic.ListsSpec.spec13
                      `cast`
                    (<Test.Hspec.Core.Example.Params>_R
                     ->_R <Test.Hspec.Core.Example.ActionWith
@@ -220,134 +414,14 @@ fbf234dc97a49ff5c269992f1927d0b7
                                   <Data.Either.Either
                                      GHC.Exception.SomeException
                                      Test.Hspec.Core.Example.Result>_R))) -}
-b95a172a310c2f4b568dca70bae815d6
-  spec11 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Stepic.ListsSpec.spec17
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   GHC.Types.False
-                   Stepic.ListsSpec.spec12) -}
-1bcbc03ad22d6fc07b957783c42060b8
-  spec110 ::
-    Test.Hspec.Core.Example.Params
-    -> (Test.Hspec.Core.Example.ActionWith
-          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-        -> GHC.Types.IO ())
-    -> Test.Hspec.Core.Example.ProgressCallback
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Either.Either
-            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
-  {- Arity: 4,
-     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
-                   @ Test.Hspec.Expectations.Expectation
-                   Test.Hspec.Core.Example.$fExampleIO1
-                     `cast`
-                   (Trans
-                        (<Test.Hspec.Expectations.Expectation>_R
-                         ->_R <Test.Hspec.Core.Example.Params>_R
-                         ->_R ((Trans
-                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
-                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
-                                ->_R <GHC.Types.IO ()>_R)
-                               ->_R <GHC.Types.IO ()>_R)
-                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
-                        (Sym (Test.Hspec.Core.Example.N:Example[0]
-                                  <Test.Hspec.Expectations.Expectation>_N)))
-                   Stepic.ListsSpec.spec111) -}
-49283f2e2255be7f0ff2dd6d05140c2f
-  spec111 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Stepic.ListsSpec.spec117
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   GHC.Types.True
-                   Stepic.ListsSpec.spec112) -}
-3751fc4cd5de3fbcedc34ab4aef5ed66
-  spec112 :: GHC.Types.Bool
-  {- Unfolding: (Stepic.Lists.isPalindrome
-                   @ GHC.Integer.Type.Integer
-                   GHC.Integer.Type.$fEqInteger
-                   Stepic.ListsSpec.spec113) -}
-404c06fab2221de2c432bc3da6e77f81
-  spec113 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Stepic.ListsSpec.spec16
-                   Stepic.ListsSpec.spec114) -}
-4ee3466e91889fa2829ef56e11e409bc
-  spec114 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Stepic.ListsSpec.spec116
-                   Stepic.ListsSpec.spec115) -}
-10f83917987596c012224896e3ef0563
-  spec115 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Stepic.ListsSpec.spec116
-                   Stepic.ListsSpec.spec92) -}
-59c25b56112b481db2d555c429cc97ae
-  spec116 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (3) -}
-cfd5f2dab04ab92748ecaa3c61fb40b7
-  spec117 ::
-    GHC.Base.String
-    -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
-  {- Unfolding: (Test.HUnit.Lang.assertEqual
-                   @ GHC.Types.Bool
-                   Stepic.ListsSpec.spec118
-                     `cast`
-                   (Sym (GHC.Classes.N:IP[0]
-                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
-                   GHC.Classes.$fEqBool
-                   GHC.Show.$fShowBool) -}
-ae246a060b6ce708c7620dc48d73972e
-  spec118 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.HUnit.Base.@=?5
-                   Test.HUnit.Base.@?=1
-                   Stepic.ListsSpec.spec119) -}
-375a47a8b6ea2e5b9fc8d487f7ecf0f7
-  spec119 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Expectations.shouldBe5
-                   Test.Hspec.Expectations.shouldBe1
-                   Stepic.ListsSpec.spec120) -}
-1b7c1fbdff8602e82a817b54b570b913
-  spec12 :: GHC.Types.Bool
-  {- Unfolding: (Stepic.Lists.isPalindrome
-                   @ GHC.Integer.Type.Integer
-                   GHC.Integer.Type.$fEqInteger
-                   Stepic.ListsSpec.spec13) -}
-5ce72e8b5e8e0d0723cb8cffc58a9c71
-  spec120 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec28
-                   Stepic.ListsSpec.spec121
-                   GHC.Stack.Types.EmptyCallStack) -}
-21a1b1edb0328e1980827135e24b50f0
-  spec121 :: GHC.Stack.Types.SrcLoc
-  {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec123
-                   Stepic.ListsSpec.spec23
-                   Stepic.ListsSpec.spec123
-                   Stepic.ListsSpec.spec122) -}
-39e7259a3120754bb09913a99513c164
-  spec122 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 52#) -}
-d162e0b9917a32cf7a290d4b09da64fc
-  spec123 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 9#) -}
-d8d493dbcad2acedc744b9e1e7641819
-  spec124 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+343994030853b0222181f6dd3b68d210
+  spec120 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 29#) -}
+c6b8954d20ce92b13c263860900ec749
+  spec121 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
   {- Unfolding: (case GHC.List.reverse1
                         @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
-                        Stepic.ListsSpec.spec125
+                        Stepic.ListsSpec.spec122
                         (GHC.Types.[]
                            @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
                    [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
@@ -363,405 +437,305 @@ d8d493dbcad2acedc744b9e1e7641819
                            (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
                             ds7 })
                            Test.Hspec.Core.Example.ExactLocation) } }) -}
-a1a4a7c7dfd3d8694707f74014a9f007
-  spec125 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+59452bef6f026a7c350a947c23991c27
+  spec122 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
   {- Unfolding: (Data.CallStack.$wunsafeDrop
                    @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
                    1#
-                   Stepic.ListsSpec.spec126) -}
-4a7db514dd94951e0c2cf167d25d63e7
-  spec126 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+                   Stepic.ListsSpec.spec123) -}
+9ee6a034c62a069f8151b1e5da383585
+  spec123 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
   {- Unfolding: (GHC.Stack.Types.getCallStack
-                   Stepic.ListsSpec.spec127) -}
-791aaeb5ba0f558e06988bb7e9eb966e
-  spec127 :: GHC.Stack.Types.CallStack
+                   Stepic.ListsSpec.spec124) -}
+f4ab2643c63c08bbdf6931f164a168a2
+  spec124 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.Hspec.Core.Tree.specItem9
                    Test.Hspec.Core.Tree.specItem2
-                   Stepic.ListsSpec.spec128) -}
-39f34caf7e1e6da81170886e7eb8d8b7
-  spec128 :: GHC.Stack.Types.CallStack
+                   Stepic.ListsSpec.spec125) -}
+afcc6e9160e19b32d348af7867ba413d
+  spec125 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.Hspec.Core.Spec.it9
                    Test.Hspec.Core.Spec.it2
-                   Stepic.ListsSpec.spec129) -}
-3446933212190674e17e661fb9f95541
-  spec129 :: GHC.Stack.Types.CallStack
+                   Stepic.ListsSpec.spec126) -}
+87a39dac990085bdcfbfa162a075dae0
+  spec126 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec39
-                   Stepic.ListsSpec.spec130
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec127
                    GHC.Stack.Types.EmptyCallStack) -}
-12ee2f72bcee4954d1885ff0259249ee
-  spec13 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Stepic.ListsSpec.spec16
-                   Stepic.ListsSpec.spec14) -}
-207521621a28c513434f9e910e3d1731
-  spec130 :: GHC.Stack.Types.SrcLoc
+ebdd323889e454788597a65279bbd3d9
+  spec127 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec131
-                   Stepic.ListsSpec.spec37
-                   Stepic.ListsSpec.spec131
-                   Stepic.ListsSpec.spec36) -}
-4aaf988a5e7ffaa24a24c7f15bfbeb06
-  spec131 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 8#) -}
-d88af864031526faff0df4232a8aad1e
-  spec14 :: [GHC.Integer.Type.Integer]
-  {- HasNoCafRefs,
-     Unfolding: (GHC.Types.:
-                   @ GHC.Integer.Type.Integer
-                   Stepic.ListsSpec.spec15
-                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
-606d5df131ec619d01d3cb07e052675d
-  spec15 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (34) -}
-fdf45a468e56e35028a824275b7a3fe6
-  spec16 :: GHC.Integer.Type.Integer
-  {- HasNoCafRefs, Unfolding: (1) -}
-3985f8e4fdfe1c10da2a1fa001b9a40c
-  spec17 ::
-    GHC.Base.String
-    -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
-  {- Unfolding: (Test.HUnit.Lang.assertEqual
-                   @ GHC.Types.Bool
-                   Stepic.ListsSpec.spec18
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec128
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec128
+                   Stepic.ListsSpec.spec55) -}
+22c788588a500ed9f3f7873bd0b4d385
+  spec128 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 28#) -}
+96d69e6c3c1f4067af764e04daf6ed4c
+  spec129 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec61
+                   Stepic.ListsSpec.spec130) -}
+c907060fa3b2efa48211ee8e5af70fda
+  spec13 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
                      `cast`
-                   (Sym (GHC.Classes.N:IP[0]
-                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
-                   GHC.Classes.$fEqBool
-                   GHC.Show.$fShowBool) -}
-bfd3050d2c511128fdadeecdf78af8d3
-  spec18 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.HUnit.Base.@=?5
-                   Test.HUnit.Base.@?=1
-                   Stepic.ListsSpec.spec19) -}
-2b4d133544e8e3a0acd00b47d732e54d
-  spec19 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Expectations.shouldBe5
-                   Test.Hspec.Expectations.shouldBe1
-                   Stepic.ListsSpec.spec20) -}
-da55ee19fd826c7d91b1d845404cf74e
-  spec2 :: ((), [Test.Hspec.Core.Tree.SpecTree ()])
-  {- Unfolding: ((GHC.Tuple.(), Stepic.ListsSpec.spec3)) -}
-e6b7db70f39190941154d16cdac77893
-  spec20 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec28
-                   Stepic.ListsSpec.spec21
-                   GHC.Stack.Types.EmptyCallStack) -}
-435cd6781dd31c79eece92c90d5d50b5
-  spec21 :: GHC.Stack.Types.SrcLoc
-  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec14) -}
+e36d64e071713843d1b519e95b8439b1
+  spec130 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "imple 2"#) -}
+07a72258da8e1ce67403c2e8f5547aab
+  spec131 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec132
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+bbdb4acbce6949ad230c3f86299cdfbf
+  spec132 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec133) -}
+62aeaee9b763501f3b5114fcf4155b7e
+  spec133 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Stepic.ListsSpec.spec87
+                   Stepic.ListsSpec.spec155
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec134
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+8a2c123fed15af323c2eb84870d247cc
+  spec134 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec135) -}
+dadd616c05669c4ab5e1dddad5b443a7
+  spec135 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec148
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Stepic.ListsSpec.spec145
+                   Stepic.ListsSpec.spec136) -}
+25342f7c0142ee2df37d34b71656268d
+  spec136 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Integer.Type.Integer]
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec110
+                   Stepic.ListsSpec.spec137) -}
+9e983e38725c5475afadb69576aa3225
+  spec137 :: [[GHC.Integer.Type.Integer]]
+  {- Unfolding: (Data.OldList.transpose_$stranspose
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec141
+                   Stepic.ListsSpec.spec138) -}
+3ec83f0cf9c575bf9ca2abcc3db123c3
+  spec138 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec140
+                   Stepic.ListsSpec.spec139) -}
+5d23d0c9e92d40199de856e6c21a1028
+  spec139 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec104
+                   (GHC.Types.[] @ [GHC.Integer.Type.Integer])) -}
+1d17f9234a53cd461cbb862828f44ef0
+  spec14 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec36
+                   (GHC.Types.[] @ GHC.Types.Char)
                    Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec24
-                   Stepic.ListsSpec.spec23
+                   Stepic.ListsSpec.spec15) -}
+77718705e8ec92077ff195466cf51173
+  spec140 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
                    Stepic.ListsSpec.spec24
                    Stepic.ListsSpec.spec22) -}
-71e770f2fde14e1030ea88d4a5bc47e5
-  spec22 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 50#) -}
-9c916f1ed20dcab4db11e0fb179bde3a
-  spec23 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 14#) -}
-14826b43574619e6d0bbfaed41fb741a
-  spec24 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 21#) -}
-7cf6599f62be82a0b904dacabebfe42b
-  spec25 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "test/Stepic/ListsSpec.hs"#) -}
-8afe05f6232a2c614e9fd9a129cb6265
-  spec26 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "Stepic.ListsSpec"#) -}
-bf2220c68306e97db54a55a150b395f6
-  spec27 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "main"#) -}
-5d594db294b78541d07acecb027a5fa0
-  spec28 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "shouldBe"#) -}
-6a0c74f91d1075646b5f2a0909b62d53
-  spec29 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
-  {- Unfolding: (case GHC.List.reverse1
-                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
-                        Stepic.ListsSpec.spec30
-                        (GHC.Types.[]
-                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
-                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
-                   : ds ds1
-                   -> case ds of wild2 { (,) ds2 loc ->
-                      GHC.Base.Just
-                        @ Test.Hspec.Core.Example.Location
-                        (Test.Hspec.Core.Example.Location
-                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
-                            ds3 })
-                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
-                            ds6 })
-                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
-                            ds7 })
-                           Test.Hspec.Core.Example.ExactLocation) } }) -}
-c5bf4141f16909bf43111a6f03953dc6
-  spec3 ::
-    [Test.Hspec.Core.Tree.Tree
-       (Test.Hspec.Core.Example.ActionWith ())
-       (Test.Hspec.Core.Tree.Item ())]
-  {- Unfolding: (GHC.Base.++
-                   @ (Test.Hspec.Core.Tree.Tree
-                        (Test.Hspec.Core.Example.ActionWith ())
-                        (Test.Hspec.Core.Tree.Item ()))
-                   Stepic.ListsSpec.spec107
-                     `cast`
-                   ([(Test.Hspec.Core.Tree.Tree
-                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
-                         ->_R <GHC.Types.IO ()>_R)
-                        (Test.Hspec.Core.Tree.Item
-                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
-                   Stepic.ListsSpec.spec4) -}
-2688f838e905b895da4b335bdf2e877e
-  spec30 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
-  {- Unfolding: (Data.CallStack.$wunsafeDrop
-                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
-                   1#
-                   Stepic.ListsSpec.spec31) -}
-2a003ed4becbb199c4c3430397012b42
-  spec31 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
-  {- Unfolding: (GHC.Stack.Types.getCallStack
-                   Stepic.ListsSpec.spec32) -}
-6eb78ca2695bd003964408434643e8e6
-  spec32 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Core.Tree.specItem9
-                   Test.Hspec.Core.Tree.specItem2
-                   Stepic.ListsSpec.spec33) -}
-da73af380c7a0ad8295901bcce291e77
-  spec33 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Core.Spec.it9
-                   Test.Hspec.Core.Spec.it2
-                   Stepic.ListsSpec.spec34) -}
-fe7ba7c3a536772a4308300d8c0ec902
-  spec34 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec39
-                   Stepic.ListsSpec.spec35
-                   GHC.Stack.Types.EmptyCallStack) -}
-af3b45263c8c4c51200d24d787cbbdfa
-  spec35 :: GHC.Stack.Types.SrcLoc
-  {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
+419d08911136c26ace51310cb2db6ced
+  spec141 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
                    Stepic.ListsSpec.spec26
+                   Stepic.ListsSpec.spec142) -}
+77eb720af9aa1c704940425a3c6c810d
+  spec142 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
                    Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec38
-                   Stepic.ListsSpec.spec37
-                   Stepic.ListsSpec.spec38
-                   Stepic.ListsSpec.spec36) -}
-7d40b50962d3cefa661407f92eb9a368
-  spec36 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 23#) -}
-dbd005efbaa34cedb61d8a4a921a6ec6
-  spec37 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 12#) -}
-efc281811e9027db652ecdd8a43b9f55
-  spec38 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 20#) -}
-43c62d8ca38a586558f71e6ca83e0359
-  spec39 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "it"#) -}
-ea9453257655178a528cb9d81cdfdc12
-  spec4 ::
-    [Test.Hspec.Core.Tree.Tree
-       (Test.Hspec.Core.Example.ActionWith ())
-       (Test.Hspec.Core.Tree.Item ())]
-  {- Unfolding: (GHC.Base.++
-                   @ (Test.Hspec.Core.Tree.Tree
-                        (Test.Hspec.Core.Example.ActionWith ())
-                        (Test.Hspec.Core.Tree.Item ()))
-                   Stepic.ListsSpec.spec86
-                     `cast`
-                   ([(Test.Hspec.Core.Tree.Tree
-                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
-                         ->_R <GHC.Types.IO ()>_R)
-                        (Test.Hspec.Core.Tree.Item
-                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
-                   Stepic.ListsSpec.spec5) -}
-228d316c44f4490b1542315eee7dda89
-  spec40 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Types.Char
-                   Stepic.ListsSpec.spec42
-                   Stepic.ListsSpec.spec41) -}
-1630a4607a6e924a88fa8319423fea4c
-  spec41 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "imple"#) -}
-9daee0a8afab3ba4a4affc6fb5294c6e
-  spec42 :: GHC.Types.Char
-  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 's'#) -}
-f359724f52e4966ecd2ae7c5c6be46bb
-  spec43 ::
-    [Test.Hspec.Core.Tree.SpecTree
-       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
-  {- Unfolding: (GHC.Types.:
-                   @ (Test.Hspec.Core.Tree.SpecTree
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec44
-                   (GHC.Types.[]
-                      @ (Test.Hspec.Core.Tree.SpecTree
-                           (Test.Hspec.Core.Example.Arg
-                              Test.Hspec.Expectations.Expectation)))) -}
-c1e14a30688b3571808c46e4f9767236
-  spec44 ::
-    Test.Hspec.Core.Tree.Tree
-      (Test.Hspec.Core.Example.ActionWith
-         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-      (Test.Hspec.Core.Tree.Item
-         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
-                   @ (Test.Hspec.Core.Example.ActionWith
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   @ (Test.Hspec.Core.Tree.Item
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec45) -}
-a535d7cdc7ec968f2034f0452688b79d
-  spec45 ::
-    Test.Hspec.Core.Tree.Item
-      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-  {- Unfolding: (Test.Hspec.Core.Tree.Item
-                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                   Stepic.ListsSpec.spec40
-                   Stepic.ListsSpec.spec57
-                   GHC.Types.False
-                   Stepic.ListsSpec.spec46
-                     `cast`
-                   (<Test.Hspec.Core.Example.Params>_R
-                    ->_R <Test.Hspec.Core.Example.ActionWith
-                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                          -> GHC.Types.IO ()>_R
-                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                    ->_R Sym (GHC.Types.N:IO[0]
-                                  <Data.Either.Either
-                                     GHC.Exception.SomeException
-                                     Test.Hspec.Core.Example.Result>_R))) -}
-35fb9ce7b96d30102eb09da1f620d576
-  spec46 ::
-    Test.Hspec.Core.Example.Params
-    -> (Test.Hspec.Core.Example.ActionWith
-          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-        -> GHC.Types.IO ())
-    -> Test.Hspec.Core.Example.ProgressCallback
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Either.Either
-            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
-  {- Arity: 4,
-     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
-                   @ Test.Hspec.Expectations.Expectation
-                   Test.Hspec.Core.Example.$fExampleIO1
-                     `cast`
-                   (Trans
-                        (<Test.Hspec.Expectations.Expectation>_R
-                         ->_R <Test.Hspec.Core.Example.Params>_R
-                         ->_R ((Trans
-                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
-                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
-                                ->_R <GHC.Types.IO ()>_R)
-                               ->_R <GHC.Types.IO ()>_R)
-                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
-                        (Sym (Test.Hspec.Core.Example.N:Example[0]
-                                  <Test.Hspec.Expectations.Expectation>_N)))
-                   Stepic.ListsSpec.spec47) -}
-74ebe48ec85af59457236c62209c01d7
-  spec47 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Stepic.ListsSpec.spec50
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   GHC.Types.True
-                   Stepic.ListsSpec.spec48) -}
-b3bcaf14c9ead3bd2ae6b1e37cac6639
-  spec48 :: GHC.Types.Bool
-  {- Unfolding: (Stepic.Lists.isPalindrome
-                   @ GHC.Types.Char
-                   GHC.Classes.$fEqChar
-                   Stepic.ListsSpec.spec49) -}
-aa97ea26ff4bff5ca772a9a8d7fdf31b
-  spec49 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "asdf1fdsa"#) -}
-94b4bed5b83d7c99033443e76aaaa58e
-  spec5 ::
-    [Test.Hspec.Core.Tree.Tree
-       (Test.Hspec.Core.Example.ActionWith ())
-       (Test.Hspec.Core.Tree.Item ())]
-  {- Unfolding: (GHC.Base.++
-                   @ (Test.Hspec.Core.Tree.Tree
-                        (Test.Hspec.Core.Example.ActionWith ())
-                        (Test.Hspec.Core.Tree.Item ()))
-                   Stepic.ListsSpec.spec65
-                     `cast`
-                   ([(Test.Hspec.Core.Tree.Tree
-                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
-                         ->_R <GHC.Types.IO ()>_R)
-                        (Test.Hspec.Core.Tree.Item
-                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
-                   Stepic.ListsSpec.spec6) -}
-56277a0788dedcf293ec933b142768c9
-  spec50 ::
+                   Stepic.ListsSpec.spec143) -}
+6606ff10c77b2e64f7e50ccae36636f3
+  spec143 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec144
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+a0885a3823aa313d41320ceaa09dd056
+  spec144 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+5d806f04ba42a7a8c7cca48f50460fc3
+  spec145 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec113
+                   Stepic.ListsSpec.spec146) -}
+80603e0e737cc2827cf747dfafc10e71
+  spec146 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec147
+                   Stepic.ListsSpec.spec143) -}
+48c0f479aab4f7696842b062518ff5c8
+  spec147 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (7) -}
+287e1914bb70f270eadc9dee95179a5e
+  spec148 ::
     GHC.Base.String
-    -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
+    -> [GHC.Integer.Type.Integer]
+    -> [GHC.Integer.Type.Integer]
+    -> Test.HUnit.Lang.Assertion
   {- Unfolding: (Test.HUnit.Lang.assertEqual
-                   @ GHC.Types.Bool
-                   Stepic.ListsSpec.spec51
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec149
                      `cast`
                    (Sym (GHC.Classes.N:IP[0]
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
-                   GHC.Classes.$fEqBool
-                   GHC.Show.$fShowBool) -}
-c3bd59735066d0a27f312bee0db167bc
-  spec51 :: GHC.Stack.Types.CallStack
+                   Stepic.ListsSpec.$s$fEq[]
+                   Stepic.ListsSpec.$s$fShow[]2) -}
+bcdd089cfa9a55b8316cf0dccd1030e0
+  spec149 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
-                   Stepic.ListsSpec.spec52) -}
-dd787698c59c2be0f4f6bd34755d74c0
-  spec52 :: GHC.Stack.Types.CallStack
+                   Stepic.ListsSpec.spec150) -}
+d075bea4bfd5b4bd37ba5f4a9445d83b
+  spec15 :: [[GHC.Integer.Type.Integer]]
+  {- Unfolding: (Stepic.Lists.groupElems
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Stepic.ListsSpec.spec16) -}
+732c81f895317de4ca5a049453892b24
+  spec150 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.Hspec.Expectations.shouldBe5
                    Test.Hspec.Expectations.shouldBe1
-                   Stepic.ListsSpec.spec53) -}
-3e479497a0c0c765b457e96723bbea73
-  spec53 :: GHC.Stack.Types.CallStack
+                   Stepic.ListsSpec.spec151) -}
+39096daad9471002d8cb77677a0ba0a6
+  spec151 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec28
-                   Stepic.ListsSpec.spec54
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec152
                    GHC.Stack.Types.EmptyCallStack) -}
-33eff2e18d1e21e54398c8d86ca34a48
-  spec54 :: GHC.Stack.Types.SrcLoc
+29afbfab0803941d4cc3087bea56d3b5
+  spec152 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec56
-                   Stepic.ListsSpec.spec23
-                   Stepic.ListsSpec.spec56
-                   Stepic.ListsSpec.spec55) -}
-3fa05963889911081816f6ebc72ed570
-  spec55 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 54#) -}
-13eafa24d2f81d72b205855445a03b8b
-  spec56 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 18#) -}
-7b740c472a09945e9b3f9c1211177885
-  spec57 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec154
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec154
+                   Stepic.ListsSpec.spec153) -}
+b1513084bec83868a6b882535f5ade60
+  spec153 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 56#) -}
+dc511679316e88a80783987a880a6b38
+  spec154 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 26#) -}
+9f8f8592ad3c65f82b12a091900c1048
+  spec155 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
   {- Unfolding: (case GHC.List.reverse1
                         @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
-                        Stepic.ListsSpec.spec58
+                        Stepic.ListsSpec.spec156
                         (GHC.Types.[]
                            @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
                    [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
@@ -777,18 +751,72 @@ dd787698c59c2be0f4f6bd34755d74c0
                            (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
                             ds7 })
                            Test.Hspec.Core.Example.ExactLocation) } }) -}
-a8bc53132a75cb8791c6f50837f88dd1
-  spec58 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+907c2c99440a1240395b014eeebe5ed9
+  spec156 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
   {- Unfolding: (Data.CallStack.$wunsafeDrop
                    @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
                    1#
-                   Stepic.ListsSpec.spec59) -}
-b30d3abcf777d28c43ef51fd9fff1528
-  spec59 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+                   Stepic.ListsSpec.spec157) -}
+4546b81cc40a99d7e9d6607494844b7f
+  spec157 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
   {- Unfolding: (GHC.Stack.Types.getCallStack
-                   Stepic.ListsSpec.spec60) -}
-1200fbdfd3c987378dc55ae4698e1164
-  spec6 ::
+                   Stepic.ListsSpec.spec158) -}
+8272d5dc7d488aeacd8d2e65c20585d2
+  spec158 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Stepic.ListsSpec.spec159) -}
+bd6addf054e74b3356445b266ffb2559
+  spec159 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Stepic.ListsSpec.spec160) -}
+3f67dfaeae3019cbc3dfc960fff70615
+  spec16 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec26
+                   Stepic.ListsSpec.spec17) -}
+b61f2518910e2c3c9e63f792786ee51b
+  spec160 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec161
+                   GHC.Stack.Types.EmptyCallStack) -}
+675bff3190b4f8b2166172b1a33a0060
+  spec161 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec55
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec55
+                   Stepic.ListsSpec.spec85) -}
+d60c91d43c46a4af24e1c2bc46c2225f
+  spec162 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec61
+                   Stepic.ListsSpec.spec163) -}
+2e0fc6fff2fcba4bbf03decb1207ae71
+  spec163 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "um3"#) -}
+9add59c9aea036c0a1e20a019dba73dc
+  spec164 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith ())
+      (Test.Hspec.Core.Tree.Item ())
+  {- Unfolding: (Test.Hspec.Core.Tree.Node
+                   @ (Test.Hspec.Core.Example.ActionWith ())
+                   @ (Test.Hspec.Core.Tree.Item ())
+                   Stepic.ListsSpec.spec293
+                   Stepic.ListsSpec.spec165) -}
+1a6a72036c045da4506e2b9c16dc6d19
+  spec165 ::
     [Test.Hspec.Core.Tree.Tree
        (Test.Hspec.Core.Example.ActionWith ())
        (Test.Hspec.Core.Tree.Item ())]
@@ -796,430 +824,239 @@ b30d3abcf777d28c43ef51fd9fff1528
                    @ (Test.Hspec.Core.Tree.Tree
                         (Test.Hspec.Core.Example.ActionWith ())
                         (Test.Hspec.Core.Tree.Item ()))
-                   Stepic.ListsSpec.spec43
+                   Stepic.ListsSpec.spec269
                      `cast`
                    ([(Test.Hspec.Core.Tree.Tree
                         (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
                          ->_R <GHC.Types.IO ()>_R)
                         (Test.Hspec.Core.Tree.Item
                            (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
-                   Stepic.ListsSpec.spec7
+                   Stepic.ListsSpec.spec166) -}
+cd51103b124ec2af0b1ec233859dc15a
+  spec166 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Base.++
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec245
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
+                   Stepic.ListsSpec.spec167) -}
+a51c821be979ee66b378b3184dc71789
+  spec167 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Base.++
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec221
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
+                   Stepic.ListsSpec.spec168) -}
+817196de3f8a3c039a5c11cb826aec8d
+  spec168 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Base.++
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec196
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
+                   Stepic.ListsSpec.spec169
                      `cast`
                    ([(Test.Hspec.Core.Tree.Tree
                         (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
                          ->_R <GHC.Types.IO ()>_R)
                         (Test.Hspec.Core.Tree.Item
                            (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R) -}
-df9f8bc4a5d72df181d353bec608c65b
-  spec60 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Core.Tree.specItem9
-                   Test.Hspec.Core.Tree.specItem2
-                   Stepic.ListsSpec.spec61) -}
-c45ab469ab8d1bf7c582cd134bcdafe0
-  spec61 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Core.Spec.it9
-                   Test.Hspec.Core.Spec.it2
-                   Stepic.ListsSpec.spec62) -}
-6a683d0e27664a88955276ee354a1e32
-  spec62 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec39
-                   Stepic.ListsSpec.spec63
-                   GHC.Stack.Types.EmptyCallStack) -}
-1c9fe6f50f1146c9027e6eb0ba292c4c
-  spec63 :: GHC.Stack.Types.SrcLoc
-  {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec64
-                   Stepic.ListsSpec.spec37
-                   Stepic.ListsSpec.spec64
-                   Stepic.ListsSpec.spec36) -}
-23b8876559554583667bedcbb2bc1a93
-  spec64 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 17#) -}
-22181190b43859c79fa7c54844be987b
-  spec65 ::
+181095ad9544683ccc8b86b93cb56195
+  spec169 ::
     [Test.Hspec.Core.Tree.SpecTree
        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
   {- Unfolding: (GHC.Types.:
                    @ (Test.Hspec.Core.Tree.SpecTree
                         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec66
+                   Stepic.ListsSpec.spec170
                    (GHC.Types.[]
                       @ (Test.Hspec.Core.Tree.SpecTree
                            (Test.Hspec.Core.Example.Arg
                               Test.Hspec.Expectations.Expectation)))) -}
-ba64e069ba3c6d711ab3111fb96a0cea
-  spec66 ::
-    Test.Hspec.Core.Tree.Tree
-      (Test.Hspec.Core.Example.ActionWith
-         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-      (Test.Hspec.Core.Tree.Item
-         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
-                   @ (Test.Hspec.Core.Example.ActionWith
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   @ (Test.Hspec.Core.Tree.Item
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec67) -}
-66944b3c2b8463e9f49d0973afdda348
-  spec67 ::
-    Test.Hspec.Core.Tree.Item
-      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-  {- Unfolding: (Test.Hspec.Core.Tree.Item
-                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                   Stepic.ListsSpec.spec40
-                   Stepic.ListsSpec.spec79
-                   GHC.Types.False
-                   Stepic.ListsSpec.spec68
-                     `cast`
-                   (<Test.Hspec.Core.Example.Params>_R
-                    ->_R <Test.Hspec.Core.Example.ActionWith
-                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                          -> GHC.Types.IO ()>_R
-                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                    ->_R Sym (GHC.Types.N:IO[0]
-                                  <Data.Either.Either
-                                     GHC.Exception.SomeException
-                                     Test.Hspec.Core.Example.Result>_R))) -}
-9daa4a3b7af35bb4ccac39d41a185d7a
-  spec68 ::
-    Test.Hspec.Core.Example.Params
-    -> (Test.Hspec.Core.Example.ActionWith
-          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-        -> GHC.Types.IO ())
-    -> Test.Hspec.Core.Example.ProgressCallback
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Either.Either
-            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
-  {- Arity: 4,
-     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
-                   @ Test.Hspec.Expectations.Expectation
-                   Test.Hspec.Core.Example.$fExampleIO1
-                     `cast`
-                   (Trans
-                        (<Test.Hspec.Expectations.Expectation>_R
-                         ->_R <Test.Hspec.Core.Example.Params>_R
-                         ->_R ((Trans
-                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
-                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
-                                ->_R <GHC.Types.IO ()>_R)
-                               ->_R <GHC.Types.IO ()>_R)
-                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
-                        (Sym (Test.Hspec.Core.Example.N:Example[0]
-                                  <Test.Hspec.Expectations.Expectation>_N)))
-                   Stepic.ListsSpec.spec69) -}
-a85235bea74c698a0402acc69fe2409c
-  spec69 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Stepic.ListsSpec.spec72
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   GHC.Types.True
-                   Stepic.ListsSpec.spec70) -}
-bb4a04f72bb2294a441c40d45270ffcc
-  spec7 ::
-    [Test.Hspec.Core.Tree.SpecTree
-       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
-  {- Unfolding: (GHC.Types.:
-                   @ (Test.Hspec.Core.Tree.SpecTree
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec8
-                   (GHC.Types.[]
-                      @ (Test.Hspec.Core.Tree.SpecTree
-                           (Test.Hspec.Core.Example.Arg
-                              Test.Hspec.Expectations.Expectation)))) -}
-c50448b2bba69335930e02188ef5dcc6
-  spec70 :: GHC.Types.Bool
-  {- Unfolding: (Stepic.Lists.isPalindrome
-                   @ GHC.Types.Char
-                   GHC.Classes.$fEqChar
-                   Stepic.ListsSpec.spec71) -}
-f42276d9d273e60879074b401638a26a
-  spec71 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "asdffdsa"#) -}
-23525d9791fddf5ab7b1718111dee90e
-  spec72 ::
-    GHC.Base.String
-    -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
-  {- Unfolding: (Test.HUnit.Lang.assertEqual
-                   @ GHC.Types.Bool
-                   Stepic.ListsSpec.spec73
-                     `cast`
-                   (Sym (GHC.Classes.N:IP[0]
-                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
-                   GHC.Classes.$fEqBool
-                   GHC.Show.$fShowBool) -}
-f1f97c3239ccbe886dd6d931217ffb43
-  spec73 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.HUnit.Base.@=?5
-                   Test.HUnit.Base.@?=1
-                   Stepic.ListsSpec.spec74) -}
-4ac2c02fdb49df5b257065f73563f108
-  spec74 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Expectations.shouldBe5
-                   Test.Hspec.Expectations.shouldBe1
-                   Stepic.ListsSpec.spec75) -}
-e7def6b09e3a9716af3812288547aee2
-  spec75 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec28
-                   Stepic.ListsSpec.spec76
-                   GHC.Stack.Types.EmptyCallStack) -}
-1347b163c641b123117b4df65988a6b5
-  spec76 :: GHC.Stack.Types.SrcLoc
-  {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec78
-                   Stepic.ListsSpec.spec23
-                   Stepic.ListsSpec.spec78
-                   Stepic.ListsSpec.spec77) -}
-b2b2d387a48db66ebfacafc34ed254ba
-  spec77 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 53#) -}
-e4a3d5756c8e51c523ee6c7983fea31d
-  spec78 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 15#) -}
-463ca9c9f1979bd113acb9478ab1e105
-  spec79 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
-  {- Unfolding: (case GHC.List.reverse1
-                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
-                        Stepic.ListsSpec.spec80
-                        (GHC.Types.[]
-                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
-                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
-                   : ds ds1
-                   -> case ds of wild2 { (,) ds2 loc ->
-                      GHC.Base.Just
-                        @ Test.Hspec.Core.Example.Location
-                        (Test.Hspec.Core.Example.Location
-                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
-                            ds3 })
-                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
-                            ds6 })
-                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
-                            ds7 })
-                           Test.Hspec.Core.Example.ExactLocation) } }) -}
-9ea42dd1c98cd9ea9cdd54840ce2d976
-  spec8 ::
-    Test.Hspec.Core.Tree.Tree
-      (Test.Hspec.Core.Example.ActionWith
-         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-      (Test.Hspec.Core.Tree.Item
-         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
-                   @ (Test.Hspec.Core.Example.ActionWith
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   @ (Test.Hspec.Core.Tree.Item
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec9) -}
-54b7e35400869c201c589af6751ff13b
-  spec80 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
-  {- Unfolding: (Data.CallStack.$wunsafeDrop
-                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
-                   1#
-                   Stepic.ListsSpec.spec81) -}
-221e88f63f0c7ba0db6f98f8856119ec
-  spec81 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
-  {- Unfolding: (GHC.Stack.Types.getCallStack
-                   Stepic.ListsSpec.spec82) -}
-020736efdfed41b3127c16ca8bf05910
-  spec82 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Core.Tree.specItem9
-                   Test.Hspec.Core.Tree.specItem2
-                   Stepic.ListsSpec.spec83) -}
-f22e73055500c3487d961d6ed9fd0b6e
-  spec83 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Test.Hspec.Core.Spec.it9
-                   Test.Hspec.Core.Spec.it2
-                   Stepic.ListsSpec.spec84) -}
-fbbe54d89cf4ee643a4f8e34f86024ba
-  spec84 :: GHC.Stack.Types.CallStack
-  {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec39
-                   Stepic.ListsSpec.spec85
-                   GHC.Stack.Types.EmptyCallStack) -}
-6a4d9bb43779e81ae3041171c267cd97
-  spec85 :: GHC.Stack.Types.SrcLoc
-  {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec23
-                   Stepic.ListsSpec.spec37
-                   Stepic.ListsSpec.spec23
-                   Stepic.ListsSpec.spec36) -}
-324803e86be2c44c61e8b429610e9c76
-  spec86 ::
-    [Test.Hspec.Core.Tree.SpecTree
-       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
-  {- Unfolding: (GHC.Types.:
-                   @ (Test.Hspec.Core.Tree.SpecTree
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec87
-                   (GHC.Types.[]
-                      @ (Test.Hspec.Core.Tree.SpecTree
-                           (Test.Hspec.Core.Example.Arg
-                              Test.Hspec.Expectations.Expectation)))) -}
-25da3cad98f47fa4824fa667e116b5de
-  spec87 ::
-    Test.Hspec.Core.Tree.Tree
-      (Test.Hspec.Core.Example.ActionWith
-         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-      (Test.Hspec.Core.Tree.Item
-         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
-                   @ (Test.Hspec.Core.Example.ActionWith
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   @ (Test.Hspec.Core.Tree.Item
-                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
-                   Stepic.ListsSpec.spec88) -}
-f9eb411df5e99203a363245acbead4a7
-  spec88 ::
-    Test.Hspec.Core.Tree.Item
-      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-  {- Unfolding: (Test.Hspec.Core.Tree.Item
-                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                   Stepic.ListsSpec.spec40
-                   Stepic.ListsSpec.spec99
-                   GHC.Types.False
-                   Stepic.ListsSpec.spec89
-                     `cast`
-                   (<Test.Hspec.Core.Example.Params>_R
-                    ->_R <Test.Hspec.Core.Example.ActionWith
-                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                          -> GHC.Types.IO ()>_R
-                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                    ->_R Sym (GHC.Types.N:IO[0]
-                                  <Data.Either.Either
-                                     GHC.Exception.SomeException
-                                     Test.Hspec.Core.Example.Result>_R))) -}
-ce0ccedc6b8dd57eb18b170914b81b76
-  spec89 ::
-    Test.Hspec.Core.Example.Params
-    -> (Test.Hspec.Core.Example.ActionWith
-          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-        -> GHC.Types.IO ())
-    -> Test.Hspec.Core.Example.ProgressCallback
-    -> GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
-          Data.Either.Either
-            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
-  {- Arity: 4,
-     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
-                   @ Test.Hspec.Expectations.Expectation
-                   Test.Hspec.Core.Example.$fExampleIO1
-                     `cast`
-                   (Trans
-                        (<Test.Hspec.Expectations.Expectation>_R
-                         ->_R <Test.Hspec.Core.Example.Params>_R
-                         ->_R ((Trans
-                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
-                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
-                                ->_R <GHC.Types.IO ()>_R)
-                               ->_R <GHC.Types.IO ()>_R)
-                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
-                        (Sym (Test.Hspec.Core.Example.N:Example[0]
-                                  <Test.Hspec.Expectations.Expectation>_N)))
-                   Stepic.ListsSpec.spec90) -}
-d2e235e32ac502a44ace4d0a22b8b66d
-  spec9 ::
-    Test.Hspec.Core.Tree.Item
-      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-  {- Unfolding: (Test.Hspec.Core.Tree.Item
-                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                   Stepic.ListsSpec.spec40
-                   Stepic.ListsSpec.spec29
-                   GHC.Types.False
-                   Stepic.ListsSpec.spec10
-                     `cast`
-                   (<Test.Hspec.Core.Example.Params>_R
-                    ->_R <Test.Hspec.Core.Example.ActionWith
-                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
-                          -> GHC.Types.IO ()>_R
-                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
-                    ->_R Sym (GHC.Types.N:IO[0]
-                                  <Data.Either.Either
-                                     GHC.Exception.SomeException
-                                     Test.Hspec.Core.Example.Result>_R))) -}
-dac277fd998f0c85d5d70e6762f230b3
-  spec90 :: Test.HUnit.Lang.Assertion
-  {- Unfolding: (Stepic.ListsSpec.spec93
-                   (GHC.Types.[] @ GHC.Types.Char)
-                   GHC.Types.True
-                   Stepic.ListsSpec.spec91) -}
-f3a3208a872d4eff079938c72ba913e2
-  spec91 :: GHC.Types.Bool
-  {- Unfolding: (Stepic.Lists.isPalindrome
-                   @ GHC.Integer.Type.Integer
-                   GHC.Integer.Type.$fEqInteger
-                   Stepic.ListsSpec.spec92) -}
-2010dff08eb9b2748399e0cd1b68a04c
-  spec92 :: [GHC.Integer.Type.Integer]
+d1e085cf1406b7d0c8b8d5f8b9229fe1
+  spec17 :: [GHC.Integer.Type.Integer]
   {- HasNoCafRefs,
      Unfolding: (GHC.Types.:
                    @ GHC.Integer.Type.Integer
-                   Stepic.ListsSpec.spec16
+                   Stepic.ListsSpec.spec25
+                   Stepic.ListsSpec.spec18) -}
+61fd536f721078f613142e76da9e1f2d
+  spec170 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec171) -}
+a45583690f4b105111d3bd73102bdb59
+  spec171 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Stepic.ListsSpec.spec193
+                   Stepic.ListsSpec.spec185
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec172
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+02807486791997fe22f431811ccb828d
+  spec172 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec173) -}
+82298189fcf5b2086747e4204509ef2a
+  spec173 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec178
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec174) -}
+6df434f2c79aaed6d63872ef2a5030b0
+  spec174 :: GHC.Types.Bool
+  {- Unfolding: (Stepic.Lists.isPalindrome
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Stepic.ListsSpec.spec175) -}
+83feecb2e86809631022e4695f8bdd42
+  spec175 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec26
+                   Stepic.ListsSpec.spec176) -}
+3c5718a610c112898f3ec027fe490bc5
+  spec176 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec177
                    (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
-ef4795a06162b09cd36fff32ef48049e
-  spec93 ::
+be10121bfce844c3d95c8dfada284d28
+  spec177 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (34) -}
+76d1386c67b80d20464f41863217c0fa
+  spec178 ::
     GHC.Base.String
     -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
   {- Unfolding: (Test.HUnit.Lang.assertEqual
                    @ GHC.Types.Bool
-                   Stepic.ListsSpec.spec94
+                   Stepic.ListsSpec.spec179
                      `cast`
                    (Sym (GHC.Classes.N:IP[0]
                              <"callStack">_N <GHC.Stack.Types.CallStack>_N))
                    GHC.Classes.$fEqBool
                    GHC.Show.$fShowBool) -}
-60f672b185b549c60bd26e37d5cc0977
-  spec94 :: GHC.Stack.Types.CallStack
+add94db82143cba555fe213093d7adde
+  spec179 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.HUnit.Base.@=?5
                    Test.HUnit.Base.@?=1
-                   Stepic.ListsSpec.spec95) -}
-346e7bc13a5d3a42b02ec212baeedf50
-  spec95 :: GHC.Stack.Types.CallStack
+                   Stepic.ListsSpec.spec180) -}
+cba947672b502b589b828ee398e69c16
+  spec18 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec25
+                   Stepic.ListsSpec.spec19) -}
+e60e18c71849bb9aff510a34fc618abe
+  spec180 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
                    Test.Hspec.Expectations.shouldBe5
                    Test.Hspec.Expectations.shouldBe1
-                   Stepic.ListsSpec.spec96) -}
-b997fb660d5f900380a28952c273f0cb
-  spec96 :: GHC.Stack.Types.CallStack
+                   Stepic.ListsSpec.spec181) -}
+cfc6a3cc4fadb4936294c6fe496fd845
+  spec181 :: GHC.Stack.Types.CallStack
   {- Unfolding: (GHC.Stack.Types.PushCallStack
-                   Stepic.ListsSpec.spec28
-                   Stepic.ListsSpec.spec97
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec182
                    GHC.Stack.Types.EmptyCallStack) -}
-8e32526dd7796f08bd5269e518dbb1b9
-  spec97 :: GHC.Stack.Types.SrcLoc
+ebe8e284af6254c6258c9f48a17d2971
+  spec182 :: GHC.Stack.Types.SrcLoc
   {- Unfolding: (GHC.Stack.Types.SrcLoc
-                   Stepic.ListsSpec.spec27
-                   Stepic.ListsSpec.spec26
-                   Stepic.ListsSpec.spec25
-                   Stepic.ListsSpec.spec37
-                   Stepic.ListsSpec.spec23
-                   Stepic.ListsSpec.spec37
-                   Stepic.ListsSpec.spec98) -}
-0e24a7e759a13ed63860a3bd0e5b551e
-  spec98 :: GHC.Types.Int
-  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 46#) -}
-4bc715725ef73ab28fe8075186483d4f
-  spec99 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec184
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec184
+                   Stepic.ListsSpec.spec183) -}
+a9f07c63b043a08b161dc8ad37c257af
+  spec183 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 50#) -}
+4306ba18600f0c392896cc01f6392ca5
+  spec184 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 22#) -}
+c89dce89e5d8f279d45a78e7e4a46cae
+  spec185 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
   {- Unfolding: (case GHC.List.reverse1
                         @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
-                        Stepic.ListsSpec.spec100
+                        Stepic.ListsSpec.spec186
                         (GHC.Types.[]
                            @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
                    [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
@@ -1235,6 +1072,1668 @@ b997fb660d5f900380a28952c273f0cb
                            (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
                             ds7 })
                            Test.Hspec.Core.Example.ExactLocation) } }) -}
+f699df80964ddd6c3e4532021cb98fc7
+  spec186 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Stepic.ListsSpec.spec187) -}
+b65bd07ea635243542464e8f6dc45d2a
+  spec187 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Stepic.ListsSpec.spec188) -}
+f607397c92ccdd64ff91cf694023a56d
+  spec188 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Stepic.ListsSpec.spec189) -}
+8da52201726d4bcd0df7e3196e9cb85f
+  spec189 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Stepic.ListsSpec.spec190) -}
+c2c01b2d1ccf695f23e5b7d2476e9054
+  spec19 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec25
+                   Stepic.ListsSpec.spec20) -}
+602fa1521eb674cb1c3b4e04a6e56848
+  spec190 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec191
+                   GHC.Stack.Types.EmptyCallStack) -}
+f8cab09ea9b53df771dc08f20d356437
+  spec191 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec192
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec192
+                   Stepic.ListsSpec.spec184) -}
+200dda155a5cf9bafa580025cdc746ae
+  spec192 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 21#) -}
+2493a20c010123d003c77e8ea893c485
+  spec193 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec195
+                   Stepic.ListsSpec.spec194) -}
+5246c1a607d97403ae055d7df4c00b9b
+  spec194 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "alse"#) -}
+69aa6e0d4cd3264533effce810c21cc5
+  spec195 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'f'#) -}
+72b685931e411aa7066112a9a59ad1e8
+  spec196 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec197
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+9c3b74a78b0a4a032652997c3138ab4f
+  spec197 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec198) -}
+d09d71597c03b0b8304acf51dd7e1b9a
+  spec198 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Stepic.ListsSpec.spec218
+                   Stepic.ListsSpec.spec210
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec199
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+b78d6232132b014cb84aba6100969b84
+  spec199 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec200) -}
+4f91294d74fb36be397932783a9323fd
+  spec2 ::
+    ((),
+     [Test.Hspec.Core.Tree.Tree
+        (Test.Hspec.Core.Example.ActionWith ())
+        (Test.Hspec.Core.Tree.Item ())])
+  {- Unfolding: ((GHC.Tuple.(), Stepic.ListsSpec.spec3)) -}
+c7954ed48802f542c2d9bc86a4d5d7c2
+  spec20 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec24
+                   Stepic.ListsSpec.spec21) -}
+2f9d9d4c99c66bd02e65b12470e7f102
+  spec200 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec203
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Types.True
+                   Stepic.ListsSpec.spec201) -}
+f31d91cb344652cec443313e18cb9007
+  spec201 :: GHC.Types.Bool
+  {- Unfolding: (Stepic.Lists.isPalindrome
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Stepic.ListsSpec.spec202) -}
+8ad20fc46b80c951bf470e5b854f5f7c
+  spec202 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "asdf1fdsa"#) -}
+25fcf5904bdc9a2fba61119cc3a9115a
+  spec203 ::
+    GHC.Base.String
+    -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ GHC.Types.Bool
+                   Stepic.ListsSpec.spec204
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEqBool
+                   GHC.Show.$fShowBool) -}
+a16bd8adc3410ae6b4bb653cebc30e98
+  spec204 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Stepic.ListsSpec.spec205) -}
+ee93c12d0f54f20d964edd904709abc1
+  spec205 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Stepic.ListsSpec.spec206) -}
+a1b04b57c564ff20e27d10e962353a76
+  spec206 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec207
+                   GHC.Stack.Types.EmptyCallStack) -}
+3fc945662c91291fa566dfea93da1934
+  spec207 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec209
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec209
+                   Stepic.ListsSpec.spec208) -}
+408be32d65cf0e92837c2c3cbeb869e0
+  spec208 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 54#) -}
+195cadb041a3e637ccfa86fe267df499
+  spec209 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 19#) -}
+2810aa307dffba33ddc37fe2b2550c68
+  spec21 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec23
+                   Stepic.ListsSpec.spec22) -}
+0ceca22656cdd1f5bea6fb24506fc661
+  spec210 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Stepic.ListsSpec.spec211
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+124639cdec48caddcfc5d2e42a06de6b
+  spec211 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Stepic.ListsSpec.spec212) -}
+c0c6f5dab93886b344625c23d8239514
+  spec212 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Stepic.ListsSpec.spec213) -}
+a5df9abc58f9fa9b234e12dca8769337
+  spec213 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Stepic.ListsSpec.spec214) -}
+deba6b79a04809e9685b2db3cbcc8d5d
+  spec214 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Stepic.ListsSpec.spec215) -}
+81608c68578c92df6fccf44a37a14a57
+  spec215 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec216
+                   GHC.Stack.Types.EmptyCallStack) -}
+a1f58d8840e4d910e2b0f1de72f4310a
+  spec216 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec217
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec217
+                   Stepic.ListsSpec.spec85) -}
+25be991dca4b84cda038c5a380e28380
+  spec217 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 18#) -}
+ef5c334e0767a0b14ed43b7c360f2155
+  spec218 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec220
+                   Stepic.ListsSpec.spec219) -}
+aac2e5860eb4e683f3384900fad73b08
+  spec219 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "iddle"#) -}
+486f8ba1882de84aa015265989a32845
+  spec22 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec23
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+4f308f0598be9d9c8bbf0f75bc582807
+  spec220 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'm'#) -}
+89f5bdc2607750b7301397507ab24877
+  spec221 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec222
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+d43c127bff9614cbdfd474e78d6aceb7
+  spec222 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec223) -}
+c2e892ced58149ff06916396f6f6f2d0
+  spec223 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Stepic.ListsSpec.spec243
+                   Stepic.ListsSpec.spec235
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec224
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+aee4bfef788219b303c6aa971f1af127
+  spec224 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec225) -}
+1d94532420082ca5d0fda8bd11a4b4c6
+  spec225 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec228
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Types.True
+                   Stepic.ListsSpec.spec226) -}
+853abca31c9bdaf9a6b11376356529d8
+  spec226 :: GHC.Types.Bool
+  {- Unfolding: (Stepic.Lists.isPalindrome
+                   @ GHC.Types.Char
+                   GHC.Classes.$fEqChar
+                   Stepic.ListsSpec.spec227) -}
+c2a567b3a754c52d3f474a2f1d73450b
+  spec227 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "asdffdsa"#) -}
+36027f662a3683590c2f19bb4fbc2e7f
+  spec228 ::
+    GHC.Base.String
+    -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ GHC.Types.Bool
+                   Stepic.ListsSpec.spec229
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEqBool
+                   GHC.Show.$fShowBool) -}
+8aabc3fa67bc33249cbb4759e79ddb5e
+  spec229 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Stepic.ListsSpec.spec230) -}
+6c72b69c880f47f0c5417d422b35a5cb
+  spec23 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+3d9773876d13a38468b596e1566a548d
+  spec230 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Stepic.ListsSpec.spec231) -}
+8bb7263c1304bf8e015c0982674a4fac
+  spec231 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec232
+                   GHC.Stack.Types.EmptyCallStack) -}
+148ed6c2855d207131656ff724307748
+  spec232 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec234
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec234
+                   Stepic.ListsSpec.spec233) -}
+9020f5544af895289dc7e123e0b448fa
+  spec233 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 53#) -}
+7b04e4fd8b4b7b666f57bd216d4534ae
+  spec234 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 16#) -}
+43549ec85131d7f000a9350f5b838a18
+  spec235 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Stepic.ListsSpec.spec236
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+5919009576694b85b6ee12447be2bd3b
+  spec236 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Stepic.ListsSpec.spec237) -}
+e9739053ed430e5065193baef9b5911b
+  spec237 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Stepic.ListsSpec.spec238) -}
+cdc17750677276e330dc8d7a130ee397
+  spec238 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Stepic.ListsSpec.spec239) -}
+49f4cb226c37e8530be0883153337d21
+  spec239 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Stepic.ListsSpec.spec240) -}
+9189bda9b59ddd7222029ef6e4760e7c
+  spec24 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+6954382ba635a8d6e2fb3c86f8d2c369
+  spec240 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec241
+                   GHC.Stack.Types.EmptyCallStack) -}
+9c58b6e147e628fe87715982be168b2d
+  spec241 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec242
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec242
+                   Stepic.ListsSpec.spec85) -}
+87274c7f7928a3da88f2de52e6d533c7
+  spec242 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 15#) -}
+6899a207c1a9805d07176310402e016b
+  spec243 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec61
+                   Stepic.ListsSpec.spec244) -}
+ebb308ba43a58cb500b8213782b62f73
+  spec244 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "tring"#) -}
+dcb01d227286c2ae91783f095cd37009
+  spec245 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec246
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+822b33aa0f569ef36608317fb1396830
+  spec246 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec247) -}
+d02b47d3748d2fa090bbae754d8ed599
+  spec247 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Stepic.ListsSpec.spec266
+                   Stepic.ListsSpec.spec258
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec248
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+c9b0de1f168a42ce6be4866abd2e50e5
+  spec248 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec249) -}
+1e25106e8705b2ddbd54d5f173c76bfe
+  spec249 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec251
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Types.True
+                   Stepic.ListsSpec.spec250) -}
+5d6872692be867915b4610f4d85b5772
+  spec25 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+4f83486715ab9d3e31f82be7200b6a51
+  spec250 :: GHC.Types.Bool
+  {- Unfolding: (Stepic.Lists.isPalindrome
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Stepic.ListsSpec.spec35) -}
+1e016218a021d59a4a35f3e4197fed1a
+  spec251 ::
+    GHC.Base.String
+    -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ GHC.Types.Bool
+                   Stepic.ListsSpec.spec252
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEqBool
+                   GHC.Show.$fShowBool) -}
+4e16ae820a42738ed30c5728d6e0be3d
+  spec252 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Stepic.ListsSpec.spec253) -}
+fc777fefc6b500fc24476bc0f9b1ec36
+  spec253 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Stepic.ListsSpec.spec254) -}
+ef9c87217a035e45c95f290a37e22061
+  spec254 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec255
+                   GHC.Stack.Types.EmptyCallStack) -}
+bf700de80d76009cb01d9137816d4018
+  spec255 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec257
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec257
+                   Stepic.ListsSpec.spec256) -}
+c9ea5270c8263bde5dd42820fa96b282
+  spec256 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 46#) -}
+57917c7c42aa160cf727de5477aace65
+  spec257 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 13#) -}
+df006cd90b6f7affafae4d15a78225b9
+  spec258 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Stepic.ListsSpec.spec259
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+ae6203956412b65c07405435b59acef7
+  spec259 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Stepic.ListsSpec.spec260) -}
+f98d936dba8f67d3f44d0432ac720f5a
+  spec26 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+e4dd95a295914fd40ff6b201158a0b5c
+  spec260 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Stepic.ListsSpec.spec261) -}
+935da0e9567e22eabcc95200ac93f96c
+  spec261 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Stepic.ListsSpec.spec262) -}
+c98d4ac15a0969c571655a754a67c0a5
+  spec262 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Stepic.ListsSpec.spec263) -}
+28bebfff7c308787ecc0b356f2152814
+  spec263 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec264
+                   GHC.Stack.Types.EmptyCallStack) -}
+cff03a5edc9c8b3932ea40c8f1129b11
+  spec264 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec265) -}
+cae8d86afe94ced70979099ca1b6a789
+  spec265 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 20#) -}
+eaf2a747939159a1aac6cdb5e7ece142
+  spec266 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec268
+                   Stepic.ListsSpec.spec267) -}
+0abb0ba9ad503835f0aee7bd3982b2ad
+  spec267 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ne"#) -}
+808d08cdd7e4781f73b6891530df0842
+  spec268 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'o'#) -}
+d632499d9cf12cc95ce725a873d15481
+  spec269 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec270
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+df8c1ca5c61377f9c14f29f9c0b4fa95
+  spec27 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec35
+                   Stepic.ListsSpec.spec28) -}
+a24c702e4ff2b6385afd06c7acc22aef
+  spec270 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec271) -}
+60695e24a1b53407f2e96f143605a9f6
+  spec271 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Stepic.ListsSpec.spec87
+                   Stepic.ListsSpec.spec285
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec272
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+390cc9e54dcde1a5f5b4b45e736d10b2
+  spec272 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec273) -}
+dceb480971c8664b81fa6644f73d7931
+  spec273 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec278
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Types.True
+                   Stepic.ListsSpec.spec274) -}
+d53609684ae240ab0eceda439e257b7b
+  spec274 :: GHC.Types.Bool
+  {- Unfolding: (Stepic.Lists.isPalindrome
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Stepic.ListsSpec.spec275) -}
+c1344105424fa1af152d834c0abf7a81
+  spec275 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec26
+                   Stepic.ListsSpec.spec276) -}
+2059551ef55d854a3c901ec4c2d48e3a
+  spec276 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec144
+                   Stepic.ListsSpec.spec277) -}
+dd5a06dd08a552393ed696fd279d03a6
+  spec277 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec144
+                   Stepic.ListsSpec.spec35) -}
+62b18e3b68903e766b3e71866f5f9591
+  spec278 ::
+    GHC.Base.String
+    -> GHC.Types.Bool -> GHC.Types.Bool -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ GHC.Types.Bool
+                   Stepic.ListsSpec.spec279
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEqBool
+                   GHC.Show.$fShowBool) -}
+2e45fc55eec5f0a07537379dfb069364
+  spec279 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Stepic.ListsSpec.spec280) -}
+c5b543ef08a2004c49bd7da0fcf6e437
+  spec28 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec32
+                   Stepic.ListsSpec.spec29) -}
+1a50a65b39c8d7d19d7d9917dbbb8bd4
+  spec280 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Stepic.ListsSpec.spec281) -}
+709f1827bcbc3407db325666fb22c5e9
+  spec281 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec282
+                   GHC.Stack.Types.EmptyCallStack) -}
+2d23a97aa53e25a1caabcb18eabb5046
+  spec282 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec284
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec284
+                   Stepic.ListsSpec.spec283) -}
+bb78c2daf47c4628ceefdd09e200c102
+  spec283 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 52#) -}
+72cb4aedc0963044a03fe0290473ee6f
+  spec284 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 10#) -}
+27944a249d30c9e0a2242ace79422d28
+  spec285 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Stepic.ListsSpec.spec286
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+4d00bd72d5b9836e87721532d436e1e5
+  spec286 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Stepic.ListsSpec.spec287) -}
+e94dbd7c03cfb56dfe826ff84ef36d32
+  spec287 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Stepic.ListsSpec.spec288) -}
+5ec20644e139ad3f397b3d7d1022c355
+  spec288 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Stepic.ListsSpec.spec289) -}
+5abf9de000852d5ade2bfcd4893a2545
+  spec289 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Stepic.ListsSpec.spec290) -}
+f0b63da193f2f1dc4cc311d4de03fb3e
+  spec29 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec31
+                   Stepic.ListsSpec.spec30) -}
+feaa5009bce8bcbde0ed7359ea04c0aa
+  spec290 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec291
+                   GHC.Stack.Types.EmptyCallStack) -}
+a65e6d623f92cbd240f7a7e10c7da309
+  spec291 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec292
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec292
+                   Stepic.ListsSpec.spec85) -}
+7d3d1220153d25b74cb51ff98d25dd4c
+  spec292 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 9#) -}
+84b9868c2a2525bd23e543069886aee8
+  spec293 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec295
+                   Stepic.ListsSpec.spec294) -}
+c8db4b2dc5caaf8c270d21b39ec446fe
+  spec294 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "sPalindrome"#) -}
+568a49ce50c969e1b6bec65522d5faf9
+  spec295 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'i'#) -}
+b4577ffbf18b57da1acec6d3ecac64b1
+  spec296 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec298
+                   Stepic.ListsSpec.spec297) -}
+15a124e2d26f8f04b2417e7b4c1a7aa8
+  spec297 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "tepic"#) -}
+80b8252ddd3f293dd84810ffd90c82da
+  spec298 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'S'#) -}
+9e7e4df56b11751788f38102be4cdba7
+  spec3 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec4
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.Tree
+                           (Test.Hspec.Core.Example.ActionWith ())
+                           (Test.Hspec.Core.Tree.Item ())))) -}
+2bd6c21930260f1ea275335174c5fc5f
+  spec30 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec21
+                   (GHC.Types.[] @ [GHC.Integer.Type.Integer])) -}
+d46298413dc0ac6c117046a9f96b196b
+  spec31 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec24
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+f16b2a1b1e04d5bdc2372c963305ae11
+  spec32 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec25
+                   Stepic.ListsSpec.spec33) -}
+e8a12d81b4f011f9921636a2c1fd69e3
+  spec33 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec25
+                   Stepic.ListsSpec.spec34) -}
+8905c39950e348a2491d31ac076e4494
+  spec34 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec25
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+a4275d42d4575a995c64e6a7d6d9a0b3
+  spec35 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec26
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+6a3201ad373a8139f562012b518226f4
+  spec36 ::
+    GHC.Base.String
+    -> [[GHC.Integer.Type.Integer]]
+    -> [[GHC.Integer.Type.Integer]]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [[GHC.Integer.Type.Integer]]
+                   Stepic.ListsSpec.spec37
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Stepic.ListsSpec.$s$fEq[]1
+                   Stepic.ListsSpec.$s$fShow[]) -}
+07ead00b892e1e5210a2a041721c7611
+  spec37 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Stepic.ListsSpec.spec38) -}
+9854b79b1b0ef51f1a812356c5db12ea
+  spec38 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Stepic.ListsSpec.spec39) -}
+01083c329b7989af552b3bc12c110c7e
+  spec39 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec40
+                   GHC.Stack.Types.EmptyCallStack) -}
+2b4febce85205511a27f42178256ce8b
+  spec4 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith ())
+      (Test.Hspec.Core.Tree.Item ())
+  {- Unfolding: (Test.Hspec.Core.Tree.Node
+                   @ (Test.Hspec.Core.Example.ActionWith ())
+                   @ (Test.Hspec.Core.Tree.Item ())
+                   Stepic.ListsSpec.spec296
+                   Stepic.ListsSpec.spec5) -}
+962ec29faa5ea6d10f4cb4ee9a034d3d
+  spec40 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec43
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec43
+                   Stepic.ListsSpec.spec41) -}
+9a2da39cb444f0f4a5117ca830b7f26a
+  spec41 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 75#) -}
+9551184cfffa16e763dfceadecbe425b
+  spec42 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 14#) -}
+446f909c9269dfe84c6c079148212f91
+  spec43 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 36#) -}
+7f5b99814c1f3121c747c71cff422679
+  spec44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "test/Stepic/ListsSpec.hs"#) -}
+6f214bb18959f51a942e7085c6160696
+  spec45 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Stepic.ListsSpec"#) -}
+96eb58e0f6fc1290e91df2f0fcbf6554
+  spec46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "main"#) -}
+25ccd7415eccd87d4419daeaf90b8485
+  spec47 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "shouldBe"#) -}
+dce8689ec178fbcb451a496e1244677a
+  spec48 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Stepic.ListsSpec.spec49
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+a2470f3df9f7f8b5cf86ea8861ff6d89
+  spec49 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Stepic.ListsSpec.spec50) -}
+adca2f642000007a7a591ee6ecbada89
+  spec5 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec164
+                   Stepic.ListsSpec.spec6) -}
+9e66e678a2a9ba69c5e11267413af5f0
+  spec50 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Stepic.ListsSpec.spec51) -}
+c282e46a530d1b831cdd1fad1a7e7e13
+  spec51 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Stepic.ListsSpec.spec52) -}
+12ccc2173542e8bde7744776d8463b47
+  spec52 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Stepic.ListsSpec.spec53) -}
+d0084f0984932ef99ab6ba8b4ff6d368
+  spec53 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec54
+                   GHC.Stack.Types.EmptyCallStack) -}
+85b49fd45370698a8ff876fc45d03f5b
+  spec54 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec57
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec57
+                   Stepic.ListsSpec.spec55) -}
+602e26b367fad52f9228d8b51a42a209
+  spec55 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 25#) -}
+a4e7c6e979f5600099c1f20f7d5e3219
+  spec56 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 12#) -}
+941a1a3f004405729987d6b9832733e7
+  spec57 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 35#) -}
+3ccfc674c6f18425c349a919f99943f1
+  spec58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "it"#) -}
+cb938d284fc9b5567803061d2be9ecdf
+  spec59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec61
+                   Stepic.ListsSpec.spec60) -}
+6f68ac54471719b2ec91dc5ef706a1db
+  spec6 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec92
+                   Stepic.ListsSpec.spec7) -}
+8ebd85630bb21f5f762873d9d1a3a0f6
+  spec60 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ame els"#) -}
+1f8ec31221500db71c1174b7e2e4e615
+  spec61 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 's'#) -}
+aaf5e2a2840bcc27981121c39b8cda60
+  spec62 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec63
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+bb2b385cac4612a609ae2ed530caffc3
+  spec63 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec64) -}
+08c5f9f4e431e201abd30e38fd028be8
+  spec64 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Stepic.ListsSpec.spec87
+                   Stepic.ListsSpec.spec78
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec65
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+46306552bffccf05bd21879392bf0d6f
+  spec65 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec66) -}
+4cd7319263ac23417c7f97a40e8e16d5
+  spec66 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec71
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Stepic.ListsSpec.spec69
+                   Stepic.ListsSpec.spec67) -}
+cea2e00926b56e1e11470cfbf27690f0
+  spec67 :: [[GHC.Integer.Type.Integer]]
+  {- Unfolding: (Stepic.Lists.groupElems
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Stepic.ListsSpec.spec68) -}
+2f5f4fdec019f5da84b52e2ce150a4d5
+  spec68 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec26
+                   Stepic.ListsSpec.spec34) -}
+f3cf66d3f8b63cd1c4613c9054961b7a
+  spec69 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec35
+                   Stepic.ListsSpec.spec70) -}
+122f7bc033f2dbd38d00927f520b5129
+  spec7 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec8
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.Tree
+                           (Test.Hspec.Core.Example.ActionWith ())
+                           (Test.Hspec.Core.Tree.Item ())))) -}
+8eb828d8901971821296de7d5a0ea926
+  spec70 :: [[GHC.Integer.Type.Integer]]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ [GHC.Integer.Type.Integer]
+                   Stepic.ListsSpec.spec34
+                   (GHC.Types.[] @ [GHC.Integer.Type.Integer])) -}
+329c2e7effdf23d0ff62934e28bd5d1d
+  spec71 ::
+    GHC.Base.String
+    -> [[GHC.Integer.Type.Integer]]
+    -> [[GHC.Integer.Type.Integer]]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [[GHC.Integer.Type.Integer]]
+                   Stepic.ListsSpec.spec72
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   Stepic.ListsSpec.$s$fEq[]1
+                   Stepic.ListsSpec.$s$fShow[]) -}
+5bdb6988d9d59ed54bdf8cf84aa8dae0
+  spec72 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.HUnit.Base.@=?5
+                   Test.HUnit.Base.@?=1
+                   Stepic.ListsSpec.spec73) -}
+c1ef1ebad3632bc418ad3381ead1e300
+  spec73 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Expectations.shouldBe5
+                   Test.Hspec.Expectations.shouldBe1
+                   Stepic.ListsSpec.spec74) -}
+70b29bd1c9c0c88874c19e714d0931c1
+  spec74 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec47
+                   Stepic.ListsSpec.spec75
+                   GHC.Stack.Types.EmptyCallStack) -}
+1b96bf13c96803d49007e987bad671d7
+  spec75 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec77
+                   Stepic.ListsSpec.spec42
+                   Stepic.ListsSpec.spec77
+                   Stepic.ListsSpec.spec76) -}
+8c515895751a2aabb5d7d4210914a780
+  spec76 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 51#) -}
+0514d07d2d26e3cb30957932c8a5fb55
+  spec77 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 33#) -}
+31436a31a2c4629a562466d64e53578e
+  spec78 :: GHC.Base.Maybe Test.Hspec.Core.Example.Location
+  {- Unfolding: (case GHC.List.reverse1
+                        @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)
+                        Stepic.ListsSpec.spec79
+                        (GHC.Types.[]
+                           @ (GHC.Base.String, GHC.Stack.Types.SrcLoc)) of wild {
+                   [] -> GHC.Base.Nothing @ Test.Hspec.Core.Example.Location
+                   : ds ds1
+                   -> case ds of wild2 { (,) ds2 loc ->
+                      GHC.Base.Just
+                        @ Test.Hspec.Core.Example.Location
+                        (Test.Hspec.Core.Example.Location
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds3 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds6 })
+                           (case loc of wild1 { GHC.Stack.Types.SrcLoc ds4 ds5 ds3 ds6 ds7 ds8 ds9 ->
+                            ds7 })
+                           Test.Hspec.Core.Example.ExactLocation) } }) -}
+0fc1c548c63fc5427a1de3d851b78c14
+  spec79 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (Data.CallStack.$wunsafeDrop
+                   @ ([GHC.Types.Char], GHC.Stack.Types.SrcLoc)
+                   1#
+                   Stepic.ListsSpec.spec80) -}
+37d895a518d92bb0ba8594fa6bd2dc2d
+  spec8 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith ())
+      (Test.Hspec.Core.Tree.Item ())
+  {- Unfolding: (Test.Hspec.Core.Tree.Node
+                   @ (Test.Hspec.Core.Example.ActionWith ())
+                   @ (Test.Hspec.Core.Tree.Item ())
+                   Stepic.ListsSpec.spec89
+                   Stepic.ListsSpec.spec9) -}
+f568c21d8a8239423cd53d46b9adc905
+  spec80 :: [([GHC.Types.Char], GHC.Stack.Types.SrcLoc)]
+  {- Unfolding: (GHC.Stack.Types.getCallStack
+                   Stepic.ListsSpec.spec81) -}
+0df18cf0be96de94e270f3138e4171ee
+  spec81 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Tree.specItem9
+                   Test.Hspec.Core.Tree.specItem2
+                   Stepic.ListsSpec.spec82) -}
+da708779a4d8b2c8bfc22ae30907ca76
+  spec82 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Test.Hspec.Core.Spec.it9
+                   Test.Hspec.Core.Spec.it2
+                   Stepic.ListsSpec.spec83) -}
+937454748a17314a27849fc732a13a1c
+  spec83 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Stepic.ListsSpec.spec58
+                   Stepic.ListsSpec.spec84
+                   GHC.Stack.Types.EmptyCallStack) -}
+9a8c04605f852ac81e784c12e10232f3
+  spec84 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Stepic.ListsSpec.spec46
+                   Stepic.ListsSpec.spec45
+                   Stepic.ListsSpec.spec44
+                   Stepic.ListsSpec.spec86
+                   Stepic.ListsSpec.spec56
+                   Stepic.ListsSpec.spec86
+                   Stepic.ListsSpec.spec85) -}
+aab3240832089725979c1586f5fbcb9b
+  spec85 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 23#) -}
+64d92fbbf36564664d31e5204119f6f9
+  spec86 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 32#) -}
+b39e2bc34ed776cd000bd1d1a8a0a2b7
+  spec87 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec61
+                   Stepic.ListsSpec.spec88) -}
+37a38c2d35a7661a466dc00699b1a696
+  spec88 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "imple"#) -}
+20671c55bb0b491cb669194a96914260
+  spec89 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Stepic.ListsSpec.spec91
+                   Stepic.ListsSpec.spec90) -}
+2ae39d5b8bb81732c2f8cd9253094211
+  spec9 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Base.++
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec62
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
+                   Stepic.ListsSpec.spec10
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R) -}
+46ca8a6f5683e9387220a21cd5b0c066
+  spec90 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "roupElems"#) -}
+916b065d601215cef7367a7dba93d191
+  spec91 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'g'#) -}
+1182673d74308ca5647585ebb310e789
+  spec92 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith ())
+      (Test.Hspec.Core.Tree.Item ())
+  {- Unfolding: (Test.Hspec.Core.Tree.Node
+                   @ (Test.Hspec.Core.Example.ActionWith ())
+                   @ (Test.Hspec.Core.Tree.Item ())
+                   Stepic.ListsSpec.spec162
+                   Stepic.ListsSpec.spec93) -}
+d322adab5062409ad0832b284454eaf9
+  spec93 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Base.++
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Stepic.ListsSpec.spec131
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R
+                   Stepic.ListsSpec.spec94
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R) -}
+2e033df82de0a5be30b7839c2b64dd59
+  spec94 ::
+    [Test.Hspec.Core.Tree.SpecTree
+       (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.SpecTree
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec95
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.SpecTree
+                           (Test.Hspec.Core.Example.Arg
+                              Test.Hspec.Expectations.Expectation)))) -}
+87ae24922e6a9c2d4878ed73b7e5a75c
+  spec95 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+      (Test.Hspec.Core.Tree.Item
+         (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+  {- Unfolding: (Test.Hspec.Core.Tree.Leaf
+                   @ (Test.Hspec.Core.Example.ActionWith
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   @ (Test.Hspec.Core.Tree.Item
+                        (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation))
+                   Stepic.ListsSpec.spec96) -}
+b6bea32643cea6251bb6fdb2d6d3b7f5
+  spec96 ::
+    Test.Hspec.Core.Tree.Item
+      (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+  {- Unfolding: (Test.Hspec.Core.Tree.Item
+                   @ (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                   Stepic.ListsSpec.spec129
+                   Stepic.ListsSpec.spec121
+                   GHC.Types.False
+                   Stepic.ListsSpec.spec97
+                     `cast`
+                   (<Test.Hspec.Core.Example.Params>_R
+                    ->_R <Test.Hspec.Core.Example.ActionWith
+                            (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+                          -> GHC.Types.IO ()>_R
+                    ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Data.Either.Either
+                                     GHC.Exception.SomeException
+                                     Test.Hspec.Core.Example.Result>_R))) -}
+8f5c65e249dd75375420df48dcec7ace
+  spec97 ::
+    Test.Hspec.Core.Example.Params
+    -> (Test.Hspec.Core.Example.ActionWith
+          (Test.Hspec.Core.Example.Arg Test.Hspec.Expectations.Expectation)
+        -> GHC.Types.IO ())
+    -> Test.Hspec.Core.Example.ProgressCallback
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Either.Either
+            GHC.Exception.SomeException Test.Hspec.Core.Example.Result #)
+  {- Arity: 4,
+     Unfolding: (Test.Hspec.Core.Example.safeEvaluateExample1
+                   @ Test.Hspec.Expectations.Expectation
+                   Test.Hspec.Core.Example.$fExampleIO1
+                     `cast`
+                   (Trans
+                        (<Test.Hspec.Expectations.Expectation>_R
+                         ->_R <Test.Hspec.Core.Example.Params>_R
+                         ->_R ((Trans
+                                    (Sub (Test.Hspec.Core.Example.D:R:Arg(->)0[0] <()>_N))
+                                    (Sub (Sym (Test.Hspec.Core.Example.D:R:ArgIO[0])))
+                                ->_R <GHC.Types.IO ()>_R)
+                               ->_R <GHC.Types.IO ()>_R)
+                         ->_R <Test.Hspec.Core.Example.ProgressCallback>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <Test.Hspec.Core.Example.Result>_R))
+                        (Sym (Test.Hspec.Core.Example.N:Example[0]
+                                  <Test.Hspec.Expectations.Expectation>_N)))
+                   Stepic.ListsSpec.spec98) -}
+53d1b731ed868a974742143c45133611
+  spec98 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Stepic.ListsSpec.spec114
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   Stepic.ListsSpec.spec111
+                   Stepic.ListsSpec.spec99) -}
+f4edaec67e7a8ac82b0788887d68ff2b
+  spec99 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Base.map
+                   @ [GHC.Integer.Type.Integer]
+                   @ GHC.Integer.Type.Integer
+                   Stepic.ListsSpec.spec110
+                   Stepic.ListsSpec.spec100) -}
+"SPEC/Stepic.ListsSpec $fEq[] @ Integer" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                    GHC.Integer.Type.Integer)
+  GHC.Classes.$fEq[] @ GHC.Integer.Type.Integer $dEq
+  = Stepic.ListsSpec.$s$fEq[]
+"SPEC/Stepic.ListsSpec $fEq[] @ [Integer]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                      [GHC.Integer.Type.Integer])
+  GHC.Classes.$fEq[] @ [GHC.Integer.Type.Integer] $dEq
+  = Stepic.ListsSpec.$s$fEq[]1
+"SPEC/Stepic.ListsSpec $fEq[]_$c/= @ Integer" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                         GHC.Integer.Type.Integer)
+  GHC.Classes.$fEq[]_$c/= @ GHC.Integer.Type.Integer $dEq
+  = Stepic.ListsSpec.$s$fEq[]_$s$fEq[]_$c/=
+"SPEC/Stepic.ListsSpec $fEq[]_$c/= @ [Integer]" [ALWAYS] forall ($dEq :: GHC.Classes.Eq
+                                                                           [GHC.Integer.Type.Integer])
+  GHC.Classes.$fEq[]_$c/= @ [GHC.Integer.Type.Integer] $dEq
+  = Stepic.ListsSpec.$s$fEq[]_$s$fEq[]_$c/=1
+"SPEC/Stepic.ListsSpec $fShow[] @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                        GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[] @ GHC.Integer.Type.Integer $dShow
+  = Stepic.ListsSpec.$s$fShow[]2
+"SPEC/Stepic.ListsSpec $fShow[] @ [Integer]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                          [GHC.Integer.Type.Integer])
+  GHC.Show.$fShow[] @ [GHC.Integer.Type.Integer] $dShow
+  = Stepic.ListsSpec.$s$fShow[]
+"SPEC/Stepic.ListsSpec $fShow[]_$cshow @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                               GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshow @ GHC.Integer.Type.Integer $dShow
+  = Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshow
+"SPEC/Stepic.ListsSpec $fShow[]_$cshowList @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                   GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshowList @ GHC.Integer.Type.Integer $dShow
+  = Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowList1
+"SPEC/Stepic.ListsSpec $fShow[]_$cshowList @ [Integer]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                     [GHC.Integer.Type.Integer])
+  GHC.Show.$fShow[]_$cshowList @ [GHC.Integer.Type.Integer] $dShow
+  = Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowList
+"SPEC/Stepic.ListsSpec $fShow[]_$cshowsPrec @ Integer" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                    GHC.Integer.Type.Integer)
+  GHC.Show.$fShow[]_$cshowsPrec @ GHC.Integer.Type.Integer $dShow
+  = Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowsPrec1
+"SPEC/Stepic.ListsSpec $fShow[]_$cshowsPrec @ [Integer]" [ALWAYS] forall ($dShow :: GHC.Show.Show
+                                                                                      [GHC.Integer.Type.Integer])
+  GHC.Show.$fShow[]_$cshowsPrec @ [GHC.Integer.Type.Integer] $dShow
+  = Stepic.ListsSpec.$s$fShow[]_$s$fShow[]_$cshowsPrec
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:
