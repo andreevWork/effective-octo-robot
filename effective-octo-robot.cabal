@@ -17,6 +17,7 @@ library
   hs-source-dirs:      src
   exposed-modules:     Lib
                      , Sort.MergeSort
+                     , Compose.Compose
                      , Sort.QuickSort
                      , Sort.BubbleSort
                      , Search.BinarySearch

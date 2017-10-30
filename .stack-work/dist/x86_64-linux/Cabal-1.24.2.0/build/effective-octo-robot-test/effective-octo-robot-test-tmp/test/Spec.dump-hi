@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-10-11 12:40:33.827436 UTC
+2017-10-30 12:05:56.077069 UTC
 
 interface main@main:Main 8002
-  interface hash: 6f44e25abfcf67f28ea0ffe915539812
-  ABI hash: eefd9f13197981513cb98b0deac2b401
+  interface hash: 7527440fab64269d8461b3b8049ff7cd
+  ABI hash: 59b6d70b856230b689a37f733a71e555
   export-list hash: 671f86fc34df332ac6d75ade2536b591
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 4e497b61131934a99e29cf8f0c9d8e75
@@ -14,8 +14,9 @@ interface main@main:Main 8002
 exports:
   Main.main
   Main.spec
-module dependencies: Search.BinarySearchSpec Sort.BubbleSortSpec
-                     Sort.MergeSortSpec Sort.QuickSortSpec Stepic.ListsSpec
+module dependencies: Compose.ComposeSpec Search.BinarySearchSpec
+                     Sort.BubbleSortSpec Sort.MergeSortSpec Sort.QuickSortSpec
+                     Stepic.ListsSpec
 package dependencies: HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI
                       MissingH-1.4.0.1@MissingH-1.4.0.1-4I5T4TbNA9RIo1FM0FgAP
                       QuickCheck-2.9.2@QuickCheck-2.9.2-LvlomhGMxrFBkX1zwiWpQu
@@ -75,6 +76,9 @@ import  -/  hspec-2.4.4@hspec-2.4.4-Ct0Af2AzisB8bPqGMHHFvj:Test.Hspec.Discover f
 import  -/  hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Runner 9121534904fdc58d9ad8fba506282e7c
 import  -/  hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Spec 9c7fa79eac9dbc252d249864b1b09503
 import  -/  hspec-core-2.4.4@hspec-core-2.4.4-Ezb0jq4rRfBJWZtpolvs1E:Test.Hspec.Core.Spec.Monad d1cd9cff7a629f7964beb4c54e36d457
+import  -/  Compose.ComposeSpec ecb03420cd3d08c60beaf5474a5d8f6e
+  exports: eed5ff0680ca2c84da45dd109fc07a98
+  spec 00ddbd0f60fb7af7adbf79c51435c8b5
 import  -/  Search.BinarySearchSpec a7cd482b9350730eaa7ca35d94310174
   exports: a66a615d3a7d241d7bd3d916e5b8b6b7
   spec 4e76f0d8654b5fd5a4a8110d5667d618
@@ -102,12 +106,12 @@ d6831ef04cb9301b090dfae6f7bb7ec7
   $trModule2 :: GHC.Types.TrName
   {- HasNoCafRefs, Strictness: m1,
      Unfolding: (GHC.Types.TrNameS "main"#) -}
-2a9afb2da1913daff4de3b117ffdc759
+9d8f6b17bbe6b2dce32bbda2910889de
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-74497b3d09ee924ea3206a589f665d4d
+f7bfa826ca31501852dfcc5f17c69e37
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -212,13 +216,27 @@ fc7928029185a773b74399c9d0c84add
         (Test.Hspec.Core.Example.ActionWith ())
         (Test.Hspec.Core.Tree.Item ())])
   {- Unfolding: ((GHC.Tuple.(), Main.main20)) -}
-b86f684e6b4a9b32d9603e7dd3accb55
+5c381f322776c52c61c0301eb640474f
   main2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           ((), [Test.Hspec.Core.Tree.SpecTree ()]) #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.Hspec.Discover.postProcessSpec1
+                        Main.main46
+                        Main.main39
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Types.N:IO[0]
+                                       <((), [Test.Hspec.Core.Tree.SpecTree ()])>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Writer.Lazy.N:WriterT[0]
+                                            <[Test.Hspec.Core.Tree.SpecTree ()]>_N
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
+                        s of ds1 { (#,#) ipv ipv1 ->
                  case Test.Hspec.Discover.postProcessSpec1
                         Main.main38
                         Main.main32
@@ -232,7 +250,7 @@ b86f684e6b4a9b32d9603e7dd3accb55
                                             <GHC.Types.IO>_R
                                             <()>_N))
                                   (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
-                        s of ds1 { (#,#) ipv ipv1 ->
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
                  case Test.Hspec.Discover.postProcessSpec1
                         Main.main31
                         Main.main25
@@ -246,7 +264,7 @@ b86f684e6b4a9b32d9603e7dd3accb55
                                             <GHC.Types.IO>_R
                                             <()>_N))
                                   (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
-                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
                  case Test.Hspec.Discover.postProcessSpec1
                         Main.main24
                         Main.main18
@@ -260,7 +278,7 @@ b86f684e6b4a9b32d9603e7dd3accb55
                                             <GHC.Types.IO>_R
                                             <()>_N))
                                   (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
-                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
                  case Test.Hspec.Discover.postProcessSpec1
                         Main.main17
                         Main.main11
@@ -274,7 +292,7 @@ b86f684e6b4a9b32d9603e7dd3accb55
                                             <GHC.Types.IO>_R
                                             <()>_N))
                                   (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
-                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
                  case Test.Hspec.Discover.postProcessSpec1
                         Main.main10
                         Main.main3
@@ -288,9 +306,9 @@ b86f684e6b4a9b32d9603e7dd3accb55
                                             <GHC.Types.IO>_R
                                             <()>_N))
                                   (Sym (Test.Hspec.Core.Spec.Monad.N:SpecM[0] <()>_N) <()>_N)))
-                        ipv6 of ds5 { (#,#) ipv8 ipv9 ->
-                 (# ipv8,
-                    (case ipv9 of wild { (,) b1 w' -> b1 },
+                        ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                 (# ipv10,
+                    (case ipv11 of wild { (,) b1 w' -> b1 },
                      case ipv1 of wild { (,) a1 w2 ->
                      GHC.Base.++
                        @ (Test.Hspec.Core.Tree.Tree
@@ -316,7 +334,13 @@ b86f684e6b4a9b32d9603e7dd3accb55
                                      (Test.Hspec.Core.Tree.Item ()))
                                 w'2
                                 (case ipv9 of wild4 { (,) b4 w'3 ->
-                                 w'3 }) }) }) }) }) #) } } } } }) -}
+                                 GHC.Base.++
+                                   @ (Test.Hspec.Core.Tree.Tree
+                                        (Test.Hspec.Core.Example.ActionWith ())
+                                        (Test.Hspec.Core.Tree.Item ()))
+                                   w'3
+                                   (case ipv11 of wild5 { (,) b5 w'4 ->
+                                    w'4 }) }) }) }) }) }) #) } } } } } }) -}
 5022cd877afcc0a4bed8842c9105b310
   main20 ::
     [Test.Hspec.Core.Tree.Tree
@@ -478,14 +502,18 @@ ed5d768c11f925999e85b7bb3912d84f
   main38 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "test/Search/BinarySearchSpec.hs"#) -}
-8cdadc8ba36e0bffeec552776f22cb70
+b3ef445d0d4697190dfca3468f84f045
   main39 ::
     GHC.Prim.State# GHC.Prim.RealWorld
-    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          ((),
+           [Test.Hspec.Core.Tree.Tree
+              (Test.Hspec.Core.Example.ActionWith ())
+              (Test.Hspec.Core.Tree.Item ())]) #)
   {- Arity: 1,
-     Unfolding: (GHC.TopHandler.runMainIO1
-                   @ ()
-                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+     Unfolding: (\ (eta :: GHC.Prim.State#
+                             GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta, Main.main40 #)) -}
 8022f42ce8952393e15f08a7d293287e
   main4 ::
     ((),
@@ -493,6 +521,67 @@ ed5d768c11f925999e85b7bb3912d84f
         (Test.Hspec.Core.Example.ActionWith ())
         (Test.Hspec.Core.Tree.Item ())])
   {- Unfolding: ((GHC.Tuple.(), Main.main5)) -}
+e5991f8a6a6b2978e83b052a7c066a2c
+  main40 ::
+    ((),
+     [Test.Hspec.Core.Tree.Tree
+        (Test.Hspec.Core.Example.ActionWith ())
+        (Test.Hspec.Core.Tree.Item ())])
+  {- Unfolding: ((GHC.Tuple.(), Main.main41)) -}
+63e062a08d9eb39534155c96646acdce
+  main41 ::
+    [Test.Hspec.Core.Tree.Tree
+       (Test.Hspec.Core.Example.ActionWith ())
+       (Test.Hspec.Core.Tree.Item ())]
+  {- Unfolding: (GHC.Types.:
+                   @ (Test.Hspec.Core.Tree.Tree
+                        (Test.Hspec.Core.Example.ActionWith ())
+                        (Test.Hspec.Core.Tree.Item ()))
+                   Main.main42
+                   (GHC.Types.[]
+                      @ (Test.Hspec.Core.Tree.Tree
+                           (Test.Hspec.Core.Example.ActionWith ())
+                           (Test.Hspec.Core.Tree.Item ())))) -}
+a66bd44eca6a2fa7cc073b9c149abd1a
+  main42 ::
+    Test.Hspec.Core.Tree.Tree
+      (Test.Hspec.Core.Example.ActionWith ())
+      (Test.Hspec.Core.Tree.Item ())
+  {- Unfolding: (Test.Hspec.Core.Tree.Node
+                   @ (Test.Hspec.Core.Example.ActionWith ())
+                   @ (Test.Hspec.Core.Tree.Item ())
+                   Main.main43
+                   Compose.ComposeSpec.spec3
+                     `cast`
+                   ([(Test.Hspec.Core.Tree.Tree
+                        (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])
+                         ->_R <GHC.Types.IO ()>_R)
+                        (Test.Hspec.Core.Tree.Item
+                           (Sub (Test.Hspec.Core.Example.D:R:ArgIO[0])))_R)_R])_R) -}
+ab8e8d3fe673e2e087a9093488bf5ec1
+  main43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   Main.main45
+                   Main.main44) -}
+9e6d3d2c5fec36451c35c62886ea544d
+  main44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ompose.Compose"#) -}
+7881eaa0a294dabaa2fed18dad763807
+  main45 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'C'#) -}
+0cb9c04fee062e6beae6710f0eb9f859
+  main46 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "test/Compose/ComposeSpec.hs"#) -}
+8bd4e9193ace2368bb61888761364ef7
+  main47 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
 7284e3b28cc9b0899c9e595d2c71efa5
   main5 ::
     [Test.Hspec.Core.Tree.Tree
@@ -529,7 +618,7 @@ fe455bdc2f5e21078e2f33f4ecc4da88
 779c4eb133328d946192946c13150608
   main9 :: GHC.Types.Char
   {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'S'#) -}
-db8ed2ded03deee80d4c18b0a9be161e
+2c7efda8f103a35b809496ca3326eb47
   spec :: Test.Hspec.Core.Spec.Monad.Spec
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
